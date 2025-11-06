@@ -1,91 +1,395 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 12 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 12 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 12</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 12</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai12.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai12.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai12.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai12_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai12_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai12.jpg" alt="Bài 12">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai12_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">LESSON 12 
+-  新年快乐 Xīn nián kuàile = 新年好 xīn nián hǎo ： happy new year 
+-  休息 xiūxi ：nghỉ ngơi 
+-  下个星期 xià ge xīngqī : tuần sau 
+-  一个星期以后 yīge xingqī yǐhòu : 1 tuần sau 
+-  祝你生日快乐 zhù ni shēngrì kuàile : HPBD 
+-  办公室 bàngōngshì: văn phòng 
+-  或 huò = 或者 huòzhě : hoặc là # 火车 huǒchē : tàu hoả 
+-  # 打火机: bật lửa ( dǎhuǒjī ) 
+-  和 hé = 与 yǔ : và 
+-  还是 háishì : hay là 
+-  说话 ： shuō huà : nói chuyện 
+-  不错 bú cuò : không sai/ tuyệt/ không tồi 
+-  怎么样 zěnme yàng ？thế nào ? 
+-  节日快乐 ！Jiérì kuàile : ngày lễ vui vẻ 
+-  中秋节: zhōng qiū jié : Tết trung thu 
+-  劳动节 láodòng jié (51 节 ): Ngày Quốc tế lao động 
+-  83 节 = 国际妇女节 guó jì fùnǚ jié : Ngày phụ nữ #国家 guó jiā: quốc gia 
+-  情人节 qíngrén jié = 02-14 : ngày lễ tình nhân 
+-  中国情人节 zhōngguó qíngrén jié: Thất tịch 520 ( 阳历 yīnlì/ 农历 nónglì 
+7/7 , yánglì : dương lịch) 
+-  牛郎织女 niú láng zhīnǚ : Ngưu Lang, Chức Nữ 
+-  端午节 duānwǔjié : Tết đoan ngọ 
+-  儿童节: ér tóng jié: Tết thiếu nhi 
+-  儿童锁 értóngsuǒ : khóa an toàn, khóa trẻ em ( trên ô tô ) 
+-  国庆节 guó qìng jié 10.01 : quốc khánh 
+-  雄王节 : xióngwáng jié : Ngày giỗ tổ
+
+-  解放节 jiěfàng jié : Ngày giải phóng 
+-  教师节 jiàoshī jié : ngày nhà giáo 
+-  教 jiāo : dạy 
+-  烈士纪念节 lièshìjìniàn jié : ngày thương binh liệt sĩ 
+-  元旦节 yuándàn jié : Tết dương 
+-  春节 chūnjié : tết âm 
+-  在吗？ Zài ma ?: có đó ko ? 
+-  我在 wǒ zài : có 
+-  祝你生日快乐 zhùnǐ shēngrì kuàile : Hpbd 
+-  两只老虎 liǎng zhī lǎohǔ : 2 con hổ 
+-  月亮代表我的心 yuèliang dàibiǎo wǒ de xīn : ánh trăng nói hộ lòng tôi 
+-  童话 tónghuà : đồng thoại 
+-  刚好遇见你: gānghǎo yùjiàn nǐ : gặp người đúng lúc 
+-  甜蜜蜜: tiánmìmì :ngọt ngào 
+-  蜜蜂 mìfēng:con ong mật # 蜂蜜 fēngmì : mật ong 
+-  中国好声音 zhōngguó hǎoshēngyīn : The voice TQ 
+-  唱歌 chàng gē : Hát 
+-  跳舞 tiàowǔ : Nhảy 
+-  KTV: quán karaoke = 歌厅 gētīng 
+-  客厅 kètīng : phòng khách 
+-  找小姐 Zhǎo xiǎojiě / 小妹 xiǎomèi 
+-  睡觉 shuìjiào : ngủ 
+-  懒 lǎn : lười 
+-  睡懒觉 shuìlǎnjiào : ngủ nướng 
+-  睡午觉 shuìwǔjiào : ngủ trưa 
+-  根据 gēnjù : căn cứ 
+-  一起 yì qǐ : cùng 
+-  第一次 dì yí cì :lần đầu tiên 
+-  进 jìn : vào, nhập
+
+-  出 chū : ra, xuất 
+-  进出口 jìnchūkǒu : xuất nhập khẩu 
+-  1992 出生 chūshēng: sinh ra 1992 
+-  哪年出生 nǎ nián chū shēng ？Sinh năm nào? 
+-  每个星期 měi ge xīngqī = 每个礼拜 měi ge lǐbài = 每周 měizhōu 
+-  有点儿 yǒu diǎnr ：có chút, hơi 
+-  件 jiàn 衣服 yīfu : quần áo 
+-  自己 zìjǐ: Tự mình/ / 已经 yǐjīng : đã từng 
+-  周末 zhōumò: Cuối tuần # 夫婚夫 Wèihūnfu : vị hôn 
+phu # 未来 wèilái : tương lai 
+-  ....... 
+以后 
+yǐ hòu : sau khi......, sau này... 
+-  ......... 
+（的de）时候 
+shíhou : lúc, khi.... 
+- 什么时候 
+shénme shíhou ? Khi nào, bao giờ ? 
+-  ......, 
+然后 
+ránhòu ........ Sau đó 
+-  件 jiàn 上衣 shàngyī : áo 
+-  条 tiáo 裤子 kùzi : quần 
+-  条 tiáo 裙子 qúnzi : váy 
+-  内衣 nèiyī : nội y 
+-  泳衣 yǒngyī : đồ bơi 
+-  过生日 guòshēngrì : đón sinh nhật 
+-  举行 jǔ xíng : tổ chức 
+-  参加 cānjiā : tham gia 
+-  常常 chángchang : thường xuyên 
+-  从 Cóng .... 到 dào ..... (from....to...) 
+-  力不从心 lì bù cóng xīn : lực bất tòng tâm
+
+-  有时候 yǒushíhou : có lúc, đôi khi, sometime 
+-  电话号码 diànhuà hàomǎ : SDT 
+-  手机号 shǒujī hào : Số DTDD 
+-  工资 Gōng zī :tiền lương # 公鸡 Gōng jī : con gà trống 
+-  母鸡 mǔ jī =蛋鸡 dàn jī : gà đẻ, gà mái 
+-  晚会 wǎnhuì : bữa tiệc 
+-  早上 zǎoshàng 5 点上课 diǎn shàngkè( vào học) ， 6 点下课 diǎn xiàkè (tan học ) 
+-  5- 到 dào 6 点 diǎn 上汉语课 shàng hànyǔkè ( lên lớp môn TT ) 
+-  洗脸 xǐliǎn :rửa mặt 
+-  洗手 xǐshǒu :rửa tay 
+-  洗脚 xǐ jiǎo :rửa chân， 泡脚 pào jiǎo : ngâm chân 
+-  脏兮兮：chân bẩn 
+-  我带你去广场，看大白腿. wǒ dài nǐ qù guǎngchǎng , kàn dàbáituǐ 
+-  大腿 đùi :dàtuǐ ， 小腿 xiǎotuǐ: bắp chân 
+-  洗头 xǐ tóu = 洗头发 xǐtóufa gội đầu 
+-  洗衣服 xǐ yīfu : giặt quần áo 
+-  吹 chuī: Thổi / 吹风机 chuīfēngjī: máy sấy tóc 、 热水机 rèshuǐ jī: bình 
+nóng lạnh ， 风扇 fēngshān : quạt 
+-  风吹走了 fēng chuī zǒu le: gió thổi đi mất rồi 
+-  B: nói bậy 
+-  牛 niú : con trâu/ bò ; giỏị giọng trêu đùa, bạn bè 
+-  牛叉叉：vãi c 
+-  吹牛 chuī niú: Bốc phét 
+-  傻 shǎ ， 傻子 shǎzi ，傻瓜 shǎguā ， 笨 bèn ， 笨蛋 bèndàn : ngốc, ngu 
+-  傻 shǎ+ B( nói bậy ) : chửi khó nghe 
+-  报告 bàogào : báo cáo 
+-  日报 rìbào: báo cáo ngày、 周报 zhōubào :báo cáo tuần、 月报 yuèbào :báo cáo tháng 
+-  自己 zìjǐ : bản thân/ tự mình 
+-  自己介绍 zìjǐ jièshào : tự giới thiệu + V
+
+-  介绍自己 jièshào zìjǐ : giới thiệu bản thân 
+-  Ví dụ: 
+-  什么事都是我自己做，别⼈不帮我 
+-  Shénme shì dōu shì wǒ zìjǐ zuò, biérén bù bāng wǒ 
+-  周末，我自己骑车回家 
+-  Zhōumò, wǒ zìjǐ qíchē huíjiā 
+-  这件衣服是我自己买的 
+-  Zhèjiàn yīfu shì wǒ zìjǐ mǎi de。 
+-  Diễn tả “giúp đỡ ai đó” . 
+-  
+-  帮忙 bāngmáng : giúp đỡ việc nhỏ 
+-  帮助 bāngzhù : giúp đỡ việc lớn 
+-  过来帮个忙 guòlái bāng ge máng : lại giúp chút 
+-  谢谢你的帮忙 xièxie nǐ de bāngzhù : cảm ơn sự giúp đỡ của bạn 
+-  Ưu tiên thực hiện hành động nào đó trước: 
+-  
+-  洗澡 xǐzǎo tắm 
+-  先回家 xiān huí jiā (Về nhà trước), 先吃饭 xiān chī fàn (ăn cơm trước) 
+帮 bāng + đối tượng +V 
+先 xiān + V 
+-  有的 yǒude .....有的 yǒude .....có người thế này, người thế kia. Cái thế này, cái 
+thế kia . 
+-  有（的）时候 yǒu (de) shíhou .......... 
+-  有（的）时候 yǒu (de) shíhou ...............Lúc thế này, lúc thế kia 
+-  Ví dụ: 
+-  这些衣服，有的是我买，有的是别人给我的。 
+-  Zhè xiē yīfu , yǒude shì wǒmǎi , yǒude shì biérén gěi wǒ de . 
+-  下 xià : dưới 
+-  些 xiē: ít, some 
+-  这些人 zhèxiē rén : mấy người này 
+-  这个人 zhè ge rén : cái người này
+
+-  这些东西 zhè xiē dōngxi : đống đồ này 
+-  这个东西 zhè ge dōngxi : cái này 
+-  周末的时候，有时候我回家，有时候我跟朋友去玩儿。 
+-  Zhōumò de shíhou, yǒu shíhou wǒ huí jiā, yǒu shíhou wǒ gēn péngyou qùwánr 
+-  汉字 hànzì #汉子 hànzi # 孩子 háizi 
+-  一起 yìqǐ : cùng 
+-  自己做饭 zìjǐ zuòfàn : tự nấu cơm 
+-  在宿舍做 zài sùshè zuò : nấu ở KTX 
+-  坐 zuò : ngồi# 做 zuò : làm 
+-  做饭 zuòfàn = 弄饭 nòngfàn = 煮饭 zhǔfàn =搞饭 gǎofàn : nấu cơm 
+-  家 jiā : nhà ( danh từ, lượng từ ) 
+-  一个公司 yí ge gōngsī = 一家公司 yì jiā gōngsī： 1 công ty 
+-  一家银行 yì jiā yínháng : 1 ngân hàng, 
+-  一家饭店 yì jiā fàndiàn :1 nhà hàng 
+-  姓名 xìng míng ： họ tên 
+-  性别 xìng bié ：giới tính 
+-  女性的朋友 nǚ xìng de péng you ：bạn giới tính nữ # người yêu 女朋友 
+-  普通话 pǔtōnghuà : tiếng phổ thông 
+-  普通的朋友 pǔtōng de péngyou : bạn bè bình thường 
+给 gěi 
+Bản thân từ 给 gěi , khi đứng 1 mình là động từ , mang nghĩa “ cho “ 
+Ví dụ : 
+妈妈给我一支笔 
+māmā gěi wǒ yì zhī bǐ (Mẹ cho tôi 1 cây bút) 
+爸爸给我钱 
+bàba gěi wǒ qián (Bố cho tôi tiền) 
+ Khi đứng sau động từ khác, đóng vai trò là giới từ, mang nghĩa “ cho “ 
+Ví dụ : 买给 mǎigěi: mua cho, 
+拿给 ná gěi : đưa cho,
+
+送给 sòng gěi: tặng cho....... 
+Vậy khi làm giời từ : 给 gěi đứng trước hay đứng sau động từ ? 
+Gọi điện thoại cho anh ấy . 
+Dịch là 给他打电话 gěi tā dǎ diànhuà hay 打电话给她 dǎ diànhuà gěi tā 
+hay 
+-  给 Đặt trước động từ là ngữ pháp chuẩn nhất, đặt sau động từ cũng có gặp . 
+借钱给他 jiè qián gěi tā : cho anh ta mượn tiền 
+给他借钱 gěi tā jiè qián : mượn tiền cho anh ta 
+-  Đối với những động từ mang tính phương hướng như : 送 ， 寄 ， 
+打 ...Sòng, jì, dǎ, 给đặt trước hay sau đều được . 
+- Đối với các từ không có tính phương hướng như 吹，洗，证明...Chuī, xǐ, 
+zhèngmíng......给 chỉ được đặt phía trước . 
+Ko thể nói : 我吹头发给你一下/Wǒ chuī tóufa gěi nǐ yíxià . 
+DE “的” là trợ từ kết cấu nối Định ngữ và Trung tâm ngữ để tạo thành cụm Danh từ. 
+Cấu trúc: 
+ 
+Định ngữ + De 的 + Trung tâm ngữ. 
+ 
+=&gt; Mẫu câu này được sử dụng rất nhiều trong khẩu ngữ tiếng Trung. 
+Trong đó: 
+o Định ngữ: là thành phần bổ sung ý nghĩa cho danh từ, biểu thị tính chất, 
+trạng thái, sở hữu của người hoặc vật. Định ngữ có thể là danh từ, tính từ, đại từ 
+hoặc cụm chủ – vị. 
+o Trung tâm ngữ: Danh từ chính trong câu (từ được định ngữ bổ sung ý 
+nghĩa). Là đối tượng chính được nhắc đến trong cụm danh từ, thường đứng phía 
+sau. 
+给 + đối tượng + V V + đối tượng +给 
+Cho biết sở hữu : 
+Danh từ/ Đại từ + 的 + Danh từ 
+1. 我的钱 : wǒ de qián 
+2. 他的手机: tā de shǒujī
+
+3. 我们的朋友 wǒmen de péngyou : 
+4. 我们的老师 wǒmen de lǎoshī : 
+5. 我的爸爸 wǒ de bàba : 
+6. 妈妈的书 māma de shū : 
+7. 学校的学生 xuéxiào de xuéshēng : 
+A. Khi danh từ theo sau và là một thuật ngữ của mối quan hệ họ hàng hoặc chỉ ra 
+mối quan hệ mật thiết, có thể bỏ qua mối quan hệ thân mật. 
+ví dụ: 
+我的爸爸 = 我爸爸 
+我们的老师= 我们老师 
+你的学生= 你学生 
+他的朋友= 他朋友 
+小明的家 = 小明家 
+B. Tính từ một ký tự 
+Khi tính từ ở phía trước của de chỉ có một ký tự thì có thể bỏ qua. 
+Ví dụ: 
+1. 新的书 = 新书 : (Xīn de shū = xīnshū: cuốn sách còn mới) 
+2. 新的房子 = 新房子 : (Xīn de fángzi = xīn fángzi: căn nhà mới) 
+3. 小的房间 = 小房间 : (Xiǎo de fángjiān = xiǎo fángjiān: căn phòng nhỏ) 
+4. 一家大的公司 = 一家大公司 : (Yījiā dà de gōngsī = yījiā dà gōngsī: một công 
+ty lớn) 
+5.小的杯奶茶 /Xiǎo de bēi nǎichá/ = 小杯奶茶 /Xiǎo bēi nǎichá/: cốc trà sữa nhỏ 
+5. 新的笔 /Xīn de bǐ/: 新笔 /Xīn bǐ/: cái bút mới 
+c. Có trường hợp giữa định ngữ và trung tâm ngữ không cần khi biểu thị phân loại 
+中文书、英文书、中国地图、越南地图。zhōng wén shū , yīng wén shū , zhōng 
+guó dì tú , yuè nán dì tú 
+d. Trạng từ đứng trước tính từ một ký tự 
+Khi có một trạng từ đứng trước tính từ một ký tự, thì không thể bỏ qua. 
+很旧的房子 (Hěn jiù de fángzi) : cái nhà rất cũ =》không nói: 很旧房子 
+很小的房间 (Hěn xiǎo de fángjiān): căn phòng rất nhỏ =》 Không nói: 很小房间 
+一家比较大的公司(Yījiā bǐjiào dà de gōngsī) 
+一家比较小的公司(Yījiā bǐjiào xiǎo de gōngsī)
+
+一本非常古老的书 /Yī běn fēicháng gǔlǎo de shū/: Một quyển sách rất cũ 
+e. Tính từ 2 âm tiết làm định ngữ 
+我哥哥是很聪明的人 / Wǒ gēgē shì hěn cōngmíng de rén 
+f. Khi tính từ lặp lại làm định ngữ, cần thêm “的”, ví dụ: 
+黑黑 的头发 /Hēi hēi de tóufǎ/ 
+大大的苹果:/Dàdà de píngguǒ/ 
+红红的书包 / hónghóng de shūbāo/ 
+g. Khi định ngữ là cụm chủ – vị, nhất định phải thêm “的”. Ví dụ: 
+Ví dụ: 吃饭： Ăn cơm 
+Muốn miêu tả cơm như thế nào thì có công thức: Chủ – Vị + de + Danh từ 
+Ăn cơm mẹ nấu: 
+Ăn là động từ : 吃 
+Cơm mẹ nấu: là cụm danh từ có công thức Mẹ + Nấu + de + Cơm ： 妈妈 做 的 饭 
+=》Vậy ăn cơm mẹ nấu: 吃妈妈做的饭 
+1. 我喜欢吃妈妈做的饭 / wǒ xǐhuan chī māma zuò de fàn : Tôi thích ăn cơm mẹ nấu. 
+2. 这是钱：Đây là tiền 
+Muốn miêu tả đây là tiền như thế nào: Chủ – Vị + de + Danh từ. 
+Đây là: 这是 
+Tiền chị tôi cho tôi: Cụm danh từ có công thức : Chị tôi + cho tôi + de + tiền: 我 
+妈妈给我的钱 
+=》Đây là tiền chị tôi cho tôi: 这是我妈妈给我的钱 : Zhè shì wǒ māmā gěi wǒ de qián 
+Táo mà bạn mua: công thức: Bạn + mua + de + táo: 你买的苹果: Nǐ mǎi de píngguǒ: quả tao 
+bạn mua 
+3. 你买的（苹果） 很好吃: Nǐ mǎi de (píngguǒ) hěn hào chī. Táo mà bạn mua ăn rất ngon 
+4.我爱的（人）是你: Wǒ ài de (rén) shì nǐ. Người mà tôi yêu là bạn 
+5. 我喜欢的东西: Wǒ xǐhuān de dōngxī: thứ tôi thích 
+6. 老师写的字: Lǎoshī xiě de zì: chữ thầy giáo viết 
+7.爸爸买的: Bàba mǎi de: bố tôi mua
+
+8. 我吃的东西: Wǒ chī de dōngxī: thứ tôi ăn 2. Kết cấu tổ từ chữ “ 的 ” Từ ( danh từ, đại 
+từ,tính từ, động từ) hoặc cụm từ thêm “的”đằng sau trở thành danh từ hóa. Nói 1 cách nôm na 
+Tiếng Việt các em hay dịch là “cái +….” 
+新:tính từ thêm “的”trở thành danh từ： 新的: cái mới 
+Cái của tôi:我的 
+Cái của ai:谁的 
+Cái anh ấy mua :他买的 
+新的 
+是我的。xīn de shì wǒ de 
+Giữa người nói và người nghe đã ngầm hiểu “cái ” được nhắc đến ở đây là cái gì 
+Ví dụ: 
+一个（箱子）：Yīgè (xiāngzi): Một cái Vali 
+这个（箱子）：Zhège (xiāngzi: Cái Vali này 
+那个（箱子）：Nàgè (xiāngzi): Cái Vali kia 
+哪个（箱子）：Cái Vali nào? 
+几个（箱子）：Jǐ gè (xiāngzi）: Mấy cái vali 
+*Muốn thêm tính từ bổ nghĩa cho danh từ thì có công thức: 
+Số từ + lượng từ + tính từ + de + (danh từ). Có thể lược bỏ danh từ 
+1. 这个新的箱子：Zhège xīn de xiāngzi: Cái Vali mới này 
+Khi nói có thể bỏ danh từ chỉ cần nói: 这个新的 
+Ví dụ: 这个新的箱子是我的。 那个旧的是我妈妈的. (Zhège xīn de xiāngzi shì 
+wǒ de. Nàgè jiù de shì wǒ māmā de: Cái vali mới này là của tôi, cái cũ kia là của 
+mẹ tôi). 
+2. 这两车： 这辆黑的车是谁的? ( Zhè liàng hēi de chē shì shéi de?): Cái xe màu đen này là 
+của ai? 
+那辆红的是我的. (Nà liàng hóng de shì wǒ de): Cái xe màu đỏ kia là của tôi. 
+这本杂志是中文的. (zhè běn zázhì shì zhōngwén de) : Cuốn tạp chí này là tạp chí 
+tiếng Trung (中文的杂志) (phía sau đã được lược bỏ danh từ 杂志) 
+她的书包是红的 . (tā de shūbāo shì hóng de : Cặp sách của cô ấy là cái màu hồng 
+(红的书包) 
+Tuy nhiên, khi sử dụng tổ từ này, chúng ta cần chú ý hai điểm:
+
+– Thứ nhất, trung tâm ngữ phải được nhắc đến hoặc xuất hiện trước đó, hoặc 
+không nói đến nhưng mọi người đều có thể ngầm hiểu được trung tâm ngữ đó là gì. 
+Ví dụ: 
+这书包是你的吗？(zhè shūbāo shì nǐ de ma: Cái cặp này là (cặp sách) của bạn à? 
+– Trung tâm ngữ “书包” đã được nhắc đến trước đó). 3. Kết cấu nhấn mạnh “ 是 … 的 ” / 
+“shì…de”: – Kết cấu “是…的” dùng để nhấn mạnh thời gian, địa điểm, phương thức của một 
+hành động đã xảy ra trong quá khứ, thể hiện người hỏi hay người nói đang muốn 
+nhấn mạnh vấn đề gì trong giao tiếp. 
+Ví dụ: 
+1. 我是坐火车来的 / wǒ zuò huǒchē lái : Tôi đi tàu hỏa đến đây (Nhấn mạnh 
+phương thức) 
+2. 他是十点睡的 / tā shì shí diǎn shuì de : Anh ấy đi ngủ lúc 10h (Nhấn mạnh thời 
+gian) 
+– Chúng ta có thể lược bỏ “是” trong câu khẳng định, 
+ví dụ: 
+1. Tôi ăn cơm lúc 8h : 我是八点吃饭的 ( wǒ shì bādiǎn chī fàn de). =&gt; 我八点吃 
+饭的. 
+2. Tôi về nhà lúc 5h: 我是 5 点 回家的 (Wǒ shì 5 diǎn huí jiā de). 
+– Dạng phủ định của “是…的” là “不是…的”, trong đó “是” không thể lược bỏ: 
+ví dụ: 
+1. 我不是坐汽车来的 ( wǒ búshì zuò qìchē lái de ): Tôi không phải đi xe hơi đến 
+đây. 
+Không thể nói: 我不坐汽车来的. 
+2. A：听说你昨晚去玩，跟谁一起去的？(Tīng shuō nǐ zuó wǎn qù wán, gēn 
+shéi yīqǐ qù de?) Nghe nói tối qua bạn đi chơi, đi cùng ai đó? 
+=&gt;B：呵呵，是跟新男友去的. (Hēhē, shì gēn xīn nányǒu qù de). Hehe, đi cùng 
+bạn trai mới đấy. 
+4. Trợ từ ngữ khí 
+好的 hǎo de = 好 
+是的 shì de =是 shì 
+5. TH# 
+Từ 的 thường được đọc là DE, trong 1 số trường hợp đọc biến điệu, 
+ví dụ :
+
+打的/ dādī:bắt taxi , díshì : 的士：taxi 
+的确: díquè : thực sự, 
+目的: mùdì : mục đích 
+月亮代表我的心 yuè liáng dàibiǎo wǒ dī xīn : ánh trăng nói hộ lòng tôi 
+Dà 大 
+Dài fu 大夫 
+音乐 yīn yuè 
+快乐 kuài lè 
+银行 yín háng 
+行 xíng 
+万里长城 wàn lǐ cháng chéng 
+越长大越孤单 yuè zhǎngdà yuè gūdān 
+有空儿 Yǒu kòngr 
+空气 Kōngqì 
+教室 jiàoshì 
+教 jiāo</div>
+
+</div>
 </body>
 </html>

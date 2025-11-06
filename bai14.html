@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 14 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 14 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 14</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 14</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai14.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai14.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai14.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai14_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai14_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai14.jpg" alt="Bài 14">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai14_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">LESSON 14 
+-  再见 zàijiàn : Tạm biệt 
+-  明天见 míngtiān jiàn : mai gặp lại 
+-  后天见 hòutiān jiàn : ngày kia gặp lại 
+-  下次见 xià cì jiàn : lần sau gặp 
+-  风 fēng :gió, Phong 
+-  疯 fēng ： 你疯了 nǐ fēng le ， mày điên rồi 
+-  你有病 nǐ yǒu bìng = 精神病 jīng shén bìng = 神经病 shénjīng bìng : mày 
+thần kinh à 
+-  心病 xīn bìng: tâm bệnh # 性病 xìng bìng: bệnh lây qua đường tình dục 
+-  叶子 yèzi : lá cây ; 椰子 yē zi : quả dừa 
+-  同屋 tóngwū : bạn cùng phòng 
+-  下雨的时候会进屋 xiàyǔ de shíhou huì jìn wū : mưa biết chạy vào nhà 
+-  几条路 jǐ tiáo lù ？ Mấy con đường 
+-  声音 Shēngyīn: giọng ， âm thanh 
+-  第几声 ？ 第一声 、 第四声 dì jǐ shēng : thanh mấy ? thanh 1/ thanh 4 
+-  家 jiā (vô hình )/ 房子 fángzi (hữu hình)： nhà 
+-  班 bān ( vô hình )/ 教室 jiàoshì (hữu hình ) ：lớp 
+-  房子在装修 fángzi zài zhuāngxiū : nhà đang sửa 
+-  楼房 lóu fáng : nhà chung cư 
+-  房子 fángzi :nhà/ 房间 fángjiān :phòng. 
+我的房子有五个房间 wǒ de fángzi yǒu wǔ ge fángjiān :nhà tôi có 5 phòng 
+-  小声 xiǎoshēng: nhỏ tiếng= 说话声音小点 shuōhuà shēngyīn xiǎo diǎnr 
+-  大声 dàshēng: to tiếng 
+-  或者 huòzhě: hoặc 
+-  讲 jiǎng = 说 shuō: nói 
+-  不讲道理 bù jiǎng dàolǐ : cùn, ko nói lí 
+-  谁跟你说 shéi gēn nǐ shuō = 谁跟你讲 jiǎng : ai nói cho mày 
+-  怎么回答 zěnme huídá ？ Trả lời thế nào
+
+-  句话 jùhuà = 句子 jùzi : câu, câu nói 
+-  有事 yǒushì ;有空 yǒu kòng;有时 yǒu shíjiān ;忙 máng ？ Có việc, rảnh, 
+có thời gian, bận 
+-  空桶 kòngtǒng : thùng rỗng 
+-  空纸箱 kòng zhǐxiāng : carton rỗng 
+-  开车 kāichē / 骑车 qíchē / 坐车 zuòchē : lái xe tô tô / đi xe đạp, xe đạp điện, 
+xe máy / đi xe khách, xe taxi, xe công ty đưa đón ( ng khác lái) 
+-  打的 dādī = 坐租出车 zuò zūchū chē ： đi taxi 
+-  坐大巴: zuò dàbā : đi xe khách 
+-  怎么 zěnme + V: thế nào, kiểu gì 
+-  怎么= 为什么 wèi shén me ？ Tại sao 
+-  怎么样 zěnmeyàng ？ 怎样 zěn yàng : thế nào ? như thế nào ? 
+-  怎么办呢 zěnme bàn ne ？ làm thế nào đây 
+-  怎么做 zěnme zuò ？ làm thế nào, làm kiểu gì 
+-  自己 zìjǐ : tự 
+-  1+加 jiā 1= 2 （ 等于 děngyú = ） 
+-  用 yòng....讲课 Jiǎngkè: giảng bài bằng ..... 
+-  我跟你讲 wǒ gēn nǐ jiǎng ：tôi với với bạn 
+-  讲故事 jiǎng gùshì : kể chuyện 
+-  用汉语介绍 Yòng hànyǔ jièshào: giới thiệu bằng tiếng trung 
+-  过生日 guò shēngrì ：đón sinh nhật 
+-  送 Sòng : tặng, đưa 
+-  .......的时候 de shí hou: lúc/ khi 
+-  下课后 xiàkè hòu = 下课以后 yǐhòu : sau khi tan học 
+-  请 qǐng ：please ,xin, hãy, làm ơn, nhờ, mời..... 
+-  请问你今年多大？ qǐng wèn nǐ jīnnián duōdà : xin hỏi năm nay bạn bao tuổi 
+-  请开门 qǐng kāimén : hãy mở cửa 
+-  请他帮我买早饭 qǐng tā bāng wǒ mǎi zǎofàn : Nhờ anh ấy mua đồ ăn sáng giúp
+
+-  请你喝奶茶 qǐng nǐ hē chá : mời bạn uống trà 
+-  请你吃鸡腿 qǐng nǐ chī jītuǐ: mời bạn ăn chân gà ;鸡翅 jīchì : cánh gà 
+-  有的时候 yǒu de shíhou =有时候 yǒushíhou =有时 yǒu shí :sometimes 
+-  没说到公园里的什么 méi shuōdào gōngyuán lǐ de shénme ？ Ko nhắc đến cái gì trong công 
+viên 
+-  跟中国朋友怎么样 gēn zhōng guó péngyou zěnme yàng ？ Với bạn bè TQ ntnao ? 
+-  包子 bāozi : bánh bao ; 报纸 bàozhǐ : báo giấy 
+-  是什么人 shì shénme rén ？làm nghề gì ? là ai ? 
+-  我的一个学生 wǒ de yí ge xuéshēng : 1 học sinh của tôi 
+-  这个汉字怎么读 zěnme = 读什么 dú shén me ？ Chữ Hán này đọc như thế nào ? 
+-  晚上到家的时候 wǎnshang dào jiā de shíhou ： buổi tối lúc về đến nhà 
+-  告诉 gàosù =跟 gēn ....讲 jiǎng / 说 shuō ： bảo , nói cho ai biết 
+-  页 yè : trang ; 半夜 bàn yè: nửa đêm ， 叶子 yèzi : lá cây 
+-  做作业 zuò zuòyè ： làm bài tập 
+-  打算 dǎsuan : dự định 
+-  大蒜 dàsuān ： củ tỏi 
+-  [CÁC PHÉP TOÁN CƠ BẢN TRONG TIẾNG TRUNG] 
+-  加 /Jiā/: cộng ; 减 / jiǎn/: trừ; 乘 /chéng/: nhân; 除以 /chú yǐ/: chia 
+-  等于 /děngyú/: bằng 
+-  平方 /píngfāng/: bình phương 平方米 mǐ :m2， 平方公里 gōnglǐ :km2 
+-  立方 /lìfāng/: lập phương ， 立方米 mǐ: m3 
+-  算 /suàn/，估计 / gūjì/: tính; 阿算 a suàn : Toán ( tên người ) 
+帮我算算 一共多少钱 bāng wǒ suànsuan yígòng duōshǎo qián ？ : bạn 
+tính giúp tôi tổng cộng bao tiền</div>
+
+</div>
 </body>
 </html>

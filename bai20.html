@@ -1,91 +1,138 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 20 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 20 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 20</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 20</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai20.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai20.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai20.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai20_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai20_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai20.jpg" alt="Bài 20">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai20_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">Lesson 20 : 
+-  左边 zuǒbiān =左面 zuǒmiàn : bên trái 
+-  里面 lǐmiàn =里边 lǐbiān : bên trong 
+-  在 zài ：: đang, ở 
+-  你在说什么 nǐ zài shūo shénme : bạn đang nói gì vậy ? 
+-  再 zài ： 再见 zàijiàn , thêm, lại 
+-  明天再说 míngtiān zài shuō : ngày mai nói sau 
+-  这儿 zhèr = 这里 zhèlǐ : đây, ở đây, 
+-  常 cháng ：thường; 长 cháng ：dài; 尝 cháng ：nếm, thử 
+-  冬瓜 dōngguā ： bí đao; 西瓜 xīguā : dưa hấu; 南瓜 nánguā : bí đỏ 
+-  北瓜 běi guā : bi ngồi HQ ; 黄瓜 huáng guā : dưa chuột 
+-  哈密瓜 hāmìguā : Dưa lưới , Dưa Ha Mi 
+-  鸡爪 jī zhuǎ : chân gà 
+-  请一天假 qǐng yìtiān jià : xin nghỉ 1 ngày 
+-  放 4 天假 fàng sì tiān jià ： được nghỉ 4 ngày 
+-  凉快 liáng kuai : mát mẻ 
+-  词 cí : từ; 生词 shēngcí : từ mới 
+-  饺子 jiǎozi: bánh sủi cảo/ bánh chẻo 
+-  哪儿 nǎr = 不 bù : không/ nào 
+-  哪知道 nǎ zhīdao = 不知道 bù zhīdao :Không biết ,nào biết 
+-  哪儿 nǎr = 什么 shénme: gì/ nào 
+-  哪国家 nǎguójiā :Nước nào = 什么国家 shénme guójiā: nước gì ? 
+-  不好意思 bù hǎo yìsi : ngại 
+-  丢脸 diū liǎn : mất mặt 
+-  尴尬 gāngà : xấu hổ, ngượng 
+-  没面子 méi miànzi : mất mặt 
+-  爱面子ài miànzi : sĩ diện 
+-  不要 búyào = 别 bié : đừng 
+-  我一个人 wǒ yí ge rén : một mình tôi
+
+-  我们两个人 wǒmen liǎng ge rén : hai đứa tôi 
+-  关于 guānyú : liên quan đến... 
+-  提到 tídào : nhắc đến 
+-  一边 yìbiān .... 一边 yìbiān ........vừa.......vừa..... 
+-  边走边聊 biān zǒu biān liáo : vừa đi vừa nói 
+-  让 ràng : để/ khiến/ bảo 
+-  看我 kàn wǒ : nhìn tôi # 干我 gàn wǒ 
+-  出去 chūqù : ra ngoài 
+-  应该: yīng gāi : nên ( lời khuyên ) 
+-  因为 yīnwèi ......所以 suóyǐ ...... vì....cho nên 
+-  多穿点衣服 duō chuān diǎnr yīfu : mặc nhiều chút 
+-  多吃水果 duō chī shuǐguǒ : ăn nhiều hoa quả 
+-  一会儿 yíhuì r : một lúc, một lát 
+-  不一会儿 bù yíhuìr : chẳng mấy chốc 
+-  不要 búyào =别 bié : đừng 
+-  几路车 jǐ lùchē : đi tuyến nào 
+-  只能 zhǐ néng : chỉ có thể 
+-  唱歌 chànggē : hát 
+-  从 cóng ......到 dào .......từ......đến...... 
+-  那家医院 nà jiā yīyuàn : bệnh viện đó 
+-  要多长时间/ 多久 yào duōcháng shíjiān / duōjiǔ ？: mất bao lâu 
+-  多少分钟 duōshǎo fēnzhōng ？bao nhiêu phút; 几个小时 jǐ ge xiǎoshí ？mấy 
+tiếng 
+-  门⼝ ménkǒu : cổng, cửa 
+-  一直往北走 yìzhí wǎng běi zǒu : cứ đi về phía bắc 
+-  大概 3 分钟 dàgài 3 fēnzhōng : khoảng 3 phút 
+-  就是 jiùshì : chính là 
+-  就 jiù : liền, thì, nhấn mạnh 
+-  身体不舒服 shēntǐ bùshūfu = 身体不好 shēntǐ bù hǎo 
+-  参加 cān jiā : tham gia
+
+-  陪 péi : cùng 
+-  没意思: chán, ko thú vị 
+-  运动会 yùndònghuì : đại hội thể thao 
+-  两只老虎 2 zhī lǎohǔ : 2 con hổ 
+-  不好= 不行 bùxíng : ko được 
+-  腿有点儿疼 tuǐ yǒudiǎnr téng : chân hơi đau 
+-  痛 tòng : đau 
+-  老实说话 lǎoshí shuōhuà : nói thật ( thành thật ) 
+-  说实话 shuōshíhuà : nói thật ( suy nghĩ trong lòng ) 
+-  别哭 bié kū: Đừng khóc. 
+-  别买 bié mǎi: Đừng mua 
+-  日用品 rìyòngpǐn : đồ dùng hàng ngày, tạp hóa. Nhu yếu phẩm 
+-  行 xíng: được 
+-  照片上 zhàopiàn shàng : trong bức ảnh 
+-  一个半小时 yí ge bàn xiǎoshí : 1tiếng rưỡi 
+-  唱歌唱得很好听 chànggē chàngde hěn hǎotīng : hát hay 
+-  歌手 gēshǒu : ca sĩ; 一首歌 yì shǒu gē : 1 bài hát 
+-  首都 shǒudū : thủ đô 
+-  首先 
+-  首页： 
+-  最近: zuì jìn : gần đây, dạo này 
+-  他那儿 tā nàr : chỗ a ta; 我这儿 wǒ zhèr : chỗ tôi 
+-  办公楼 bàn gōng lóu: toà làm việc 
+-  有意思 yǒu yìsi : hay, thú vị 
+-  进去 jìnqù ， 进来 jìnlái : đi vào # 最近 zuìjìn : gần đây 
+-  进门以后 jìnmén yǐhòu ： sau khi vào cửa 
+-  你属什么 nǐ shǔ shénme ？:cầm tinh con gì ? 
+-  我属猴 shǔ hóu : cầm tinh con khỉ 
+-  凤凰 fènghuáng = 鸡 jī : Phượng hoàng = gà 
+-  做鸡 zuòjī = 做小姐 zuò xiǎojiě :làm gái mại dâm
+
+-  做鸭 zuòyā ：làm vịt( trai bao ) 
+-  我属小龙 xiǎolóng =蛇 shé : con rắn 
+-  龙 lóng : rồng 
+-  小白兔 xiǎo bái tù: tiểu bạch thỏ 
+-  狐狸 hūli : hồ li 
+-  尾巴 wěiba : đuôi 
+-  又来 yòu lái : lại đến ( ko chào đón, ko vui ) 
+-  再来 zàilái : lại đến ( hoan nghênh) 
+-  到此结束 dàocǐ jiéshù : kết thúc ở đây 
+-  Yuánlái rúcǐ 原来如此: hóa ra là thế</div>
+
+</div>
 </body>
 </html>

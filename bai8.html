@@ -1,91 +1,136 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 8 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 8 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 8</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 8</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai8.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai8.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai8.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai8_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai8_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai8.jpg" alt="Bài 8">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai8_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">LESSON 8 : 
+-  吧 ba : trợ từ ngữ khí( nha, nhé, đi, thôi ) 
+-  你说吧 nǐ shuō ba : bạn nói đi 
+-  走吧 zǒu ba : đi thôi, đi đi 
+-  做吧 zuò ba ！Làm đi 
+-  办公室 bàn gōng shì : văn phòng # 车间 Chē jiān : xưởng 
+-  教室 jiàoshì : giảng đường 
+-  会议室 huìyì shì : phòng họp 
+-  工厂 gōng chǎng : công xưởng 
+-  颜色 yán sè : màu sắc 
+-  红色 hóng sè : màu đỏ/ hồng 
+-  绿色 Lǜ sè : green 蓝 色 lánsè : blue 
+-  戴绿帽 dài lǜ màozi ：đội mũ màu xanh lá cây/ Bị vợ cho cắm sừng 
+-  蓝牙 lányá : bluetooth 
+-  世界杯 shìjìe bēi ：world cup bóng đá 
+-  黑色 hēi sè: màu đen 
+-  白色 bái sè : màu trắng 
+-  牛 niú : con trâu/ con bò 
+-  牛肉 Niú ròu ： thịt bò/ Trâu 
+-  黄牛 huáng niú : con bò / 水牛 shuǐ niú : con trâu 
+-  牛奶 niúnǎi ：sữa bò 
+-  一只猫 yīzhī mào ，一只狗 yīzhī gǒu : 1 con mèo, 1 con chó 
+-  一头猪 yī tóu zhū : 1 con lợn 
+-  一头牛 yī tóu niú : 1 con bò 
+-  一条蛇 yì tiáo shé : con rắn， 一条狗 yì tiáo gǒu : con chó, 一条鱼 
+-  我怕黑？Wǒ pà hēi : sợ bóng tối 
+-  你怕绿？Nǐ pà lǜ ma ? : anh có sợ xanh lá cây. 
+-  Câu chuyện về chiếc mũ màu xanh . 
+-  红牛 hóng niú : bò húc， redbull 
+-  色 sè : dê/ dâm dê =黄 Huáng ( maù vàng)
+
+-  卡通 kǎtōng =动画片 dònghuàpiàn ： cartoon 
+-  黄片 huángpiàn ： phim xxx 
+-  好色 hào sè : háo sắc 
+-  对了 duì le : đúng rồi ( ý chuyển sang chủ đề # ) 
+-  对 duì : Đúng / phải . 
+-  楼 lóu : tầng/ tòa nhà 
+-  羊 yáng : con dê/ cừu 
+-  山羊 shān yáng :dê 
+-  绵羊 mián yáng :cừu 
+-  大 dà : to, lớn 
+-  美 měi : mỹ 
+-  用 yòng : dùng/ sử dụng 
+-  用汉语聊天 yòng hàn yǔ liáotiān . nói chuyện bằng tiếng trung 
+-  你会英语吗？Nǐ huì yīngyǔ ma ? Bạn biết tiếng anh không ? 
+-  会一点点儿 Huì yī diǎnr diǎnr . biết 1 chút 
+-  用英语介绍 yòng yīng yǔ jièshào ? Giới thiệu bằng tiếng anh 
+-  要 yào : cần/ phải/muốn 
+-  想 xiǎng : nhớ/ nghĩ/ muốn 
+-  休息 xiū xi : nghỉ ngơi 
+-  Phủ định của 要 yào dùng : 不用 bú yòng 
+-  不要 bú yào (không thèm ) 
+-  找 zhǎo : tìm/ trả lại tiền thừa (thối ) 
+-  借钱 jiè qián: vay tiền / 还钱 huán qián : trả tiền 
+-  小学一年级 xiǎoxué yī niánjí : lớp thứ nhất tiểu học (lớp1 ) 
+-  中学一年级: zhōngxué yīniánjí :lớp thứ nhất trung học ( lớp 6 ) 
+-  初中: chūzhōng :cấp 2 
+-  高中:gāozhōng : cấp 3 
+-  大专/ 高等 Dàzhuān/ gāoděng :trung cấp/ cao đẳng 
+-  大学一年级 dàxué yīniánjí :năm nhất đại học 
+-  大学本科 dà xué kèběn :ĐH chính quy
+
+-  大四 dà sì : đại học năm 4 
+-  Ở Trung Quốc 6 năm tiểu học, 3 năm cấp 2, 3 năm cấp 3 
+-  BTVN：Viết bài giới thiệu về gia đình, khoảng 5 câu 
+-  Cách dùng từ 在 zài 
+-  在 zài + V ( phó từ đang ) 
+-  我在吃饭 wǒ zài chī fàn ( tôi đang ăn cơm) 
+-  我在学习 wǒ zài xuéxí hànyǔ ( tôi đang học tieng trung ) 
+-  我在玩游戏 wǒ zài wán yóuxì : Tôi đang chơi game 
+-  走路 zǒulù : đi bộ= 散步 sànbù :đi dạo= 跑步 pǎobù chạy bộ 
+-  Cách diễn tả “ ở đâu làm gì “ 
+-  ( 在 zài + địa điểm+ V ) 
+-  Khi dịch sang TV , nên dịch động từ trước . 
+-  我在吃饭 wǒ zài jiā chī fàn ( tôi ăn cơm ở nhà ) 
+-  我在宿舍睡觉 wǒ zài sùshè shuìjiào ( tôi ngủ ở ktx) 
+-  你在哪儿学习汉语 nǐ zài nǎr xuéxí hànyǔ ? ( bạn học tiếng trung ở đâu ) 
+-  我在公司吃午饭 wǒ zài gōngsī chī wǔ fàn . ( tôi ăn cơm trưa ở công ty ) 
+-  我自己学习 zìjǐ xuéxí : tôi tự học 
+-  Misa 中心 zhōngxīn: Trung tâm Misa 
+-  我在网上学习汉语 wǒ zài wǎngshang xuéxí hànyǔ 
+-   Tôi học tiếng trung trên mạng 
+-  今天晚上， 我们上网聊天 jīntiān wǎnshang wǒmen shàng wǎng liáotiān 
+Tôi nay chúng ta online nói chuyện 
+-  网友: wǎngyǒu : bạn trên mạng 
+-  网恋: wǎngliàn : yêu online 
+-  谈恋爱: tánliàn ài : yêu đương 
+-  酒友:jiǔyǒu : bạn nhậu 
+-  上网 shangwǎng / 网上 wǎngshang : lên mạng / trên mạng 
+-  .............上 shàng / xià 下: trên/ dưới; lên / xuống 
+-  上楼 shànglóu ：lên tầng/ 楼上 lóushàng : trên tầng 
+-  桌子上 zhuōzi shàng ：Trên bàn 
+-  床 chuáng : Giường/ 船 chuán: thuyền
+
+-  床上 chuáng shàng # 上床 shàng chuáng 
+ 
+ 
+ 
+ 
+----------------------------------------------------------------------------------------------------</div>
+
+</div>
 </body>
 </html>

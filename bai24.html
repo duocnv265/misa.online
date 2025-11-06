@@ -1,91 +1,534 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 24 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 24 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 24</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 24</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai24.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai24.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai24.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai24_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai24_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai24.jpg" alt="Bài 24">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai24_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">Lesson 24: 
+-  有空儿 yǒukòngr : rảnh 
+-  空桶 kōng tǒng : thùng rỗng 
+-  空纸箱 kōng zhǐxiāng : thùng carton rỗng 
+-  会社 huìshè ( ít gặp) =公司 gōngsī : công ty 
+-  买着 mǎi zháo = 买到 mǎi dào : mua được 
+-  告诉 gàosu = 跟 gēn ....讲 jiǎng / 说 shuō : nói với ....thông tin nào đó 
+-  说说她 shuō shuō tā ：mắng , nói nó 
+-  两天后 liǎngtiān hòu = 过两天 guò liǎng tiān : 2 hôm nữa 
+-  过一个星期 guò yí ge xīngqī : qua 1 tuần 
+-  过三年 guò sān nián : 3 năm nữa 
+-  过了半年 guò le bànnián : qua nửa năm 
+-  说说她 shuōshuō tā : nói cô ấy( mắng ) 
+-  跟她说一声 gēn tā shuō yìshēng : nói với cô ấy 1 tiếng ( truyền thông tin) 
+-  会议 huìyì（ N） ： cuộc họp 
+-  开会 kāi huì（V）: họp 
+-  地铁 dìtiě : tàu điện ngầm 
+-  铁路 tiělù : đường sắt 
+-  来晚 láiwǎn =迟到 chídào ： đi muộn 
+-  再晚来 zài wǎnlái : muộn thêm 
+-  别⽓我 bié qì wǒ = 别惹我 bié rě wǒ = 别惹我⽣⽓ bié rě wǒ shēngqì : đừng 
+chọc tức tao 
+-  别⽣我的⽓ bié shēngwǒde qì :đừng giận tao 
+-  闹钟 nào zhōng : hẹn giờ 
+-  电话响 diànhuà xiǎng : điện thoại kêu 
+-  刚吃完饭 gāng chī wán fàn : vừa mới ăn cơm xong 
+-  躺到床上 tǎng dào chuáng shang : nằm lên trên giường 
+-  羽绒服 yǔ róng fú : áo phao ,lông vũ
+
+-  羽毛球 yǔmáoqiú ： cầu lông 
+-  冲凉 chōngliáng : tắm nhanh, xối nước= 冲一冲 chōngyīchōng 
+-  冲进来 chōng jìn lái : xông vào 
+-  洗个热水澡 xǐ ge rè shuǐ zǎo : tắm nước nóng 
+-  去年 qù nián ： năm ngoái; 今年 jīn nián : năm nay; 后年 hòu nián : năm sau 
+-  会议 huì yì ：hội nghị, cuộc họp 
+-  寄东西 jì dōngxī : gửi đồ; 发邮件 fā yóujiàn : gửi mail 
+-  地球 dìqiú : trái đất 
+-  搜狗拼音输入法 sōugǒu pīnyīn shūrùfǎ ：bộ gõ Sougou pinyin 
+-  入眠 rù mián : chìm vào giấc ngủ / 人 rén ; 入库 rù kù ：nhập kho 
+-  失眠 shīmián ：mất ngủ; 失恋 shīliàn ：thất tình 7love 
+-  丢了你 diū le nǐ : đánh mất em ( tên bài hát) 
+-  失去了你 shīqù le nǐ : đánh mất em 
+-  BAIDU.COM ( trang tìn kiếm thông tin của TQ ) 
+-  谈恋爱 tán liàn ài ：yêu đương 
+-  对 duì ........不好 bùhǎo : không tốt với 
+-  健康 jiànkāng: sức khoẻ, khoẻ mạnh 
+-  喝杯牛奶 hē bēi niúnǎi: uống cốc sữa bò 
+-  黄牛 huáng niú : bò; 水牛 shuǐ niú : trâu 
+-  安静ān jìng : yên tĩnh 
+-  对健康好/不好 duì jiànkāng hǎo/bù hǎo : tốt/ không tốt cho sức khoẻ . 
+-  出发 chūfā : xuất phát 
+-  考勤表 kǎoqín biǎo : bảng chuyên cần 
+-  工资表 gōngzī biǎo : bảng lương 
+-  做表格 zuò biǎogé : làm bảng biểu 
+-  看表 kànbiǎo : xem giờ 
+-  班表 bān biǎo :bảng chia ca làm 
+-  新来 xīnlái = 刚来: mới đến 
+-  手表 shǒubiǎo ：đồng hồ đeo tay
+
+-  已经 yǐjīng ： đã / đã từng 
+-  出发 chūfā ： xuất phát 
+-  错误 cuòwù : sai 
+-  错错错 cuò cuò cuò ( tên bài hát ) 
+-  正确 zhèngquè ：cszzhính xác 
+-  挺 tǐng + adj : rất, lắm= 蛮 mán = 老 lǎo 
+-  嘛 ma： mà 
+-  吗？ Không? 
+-  干嘛 gànmǎ ？ =干吗 gàn mǎ ？= 干啥 gàn shá ？: làm gì đấy ? 
+-  收拾: thu dọn 
+-  买房子 mǎi fángzi : mua nhà 
+-  租房子 zū fángzi : thuê nhà 
+-  周围环境 huánjìng ： môi trường 
+-  环保 huánbǎo (环境保护 huánjìng bǎohù ): bảo vệ môi trường, thân thiện với 
+môi trường 
+-  EHS 
+-  公交车 gōngjiāochē =公共汽车 gōnggòngqìchē : xe bus 
+-  大巴车 dàbāchē : xe khách 
+-  卡车 kǎchē : xe tải 
+-  货车 huòchē : xe chở hàng 
+-  集装箱 jí zhuāngxiāng : container 
+-  交通 jiāotōng : giao thông; 警察 jǐngchá : cảnh sát 
+-  报警 bàojǐng : báo cảnh sát; 警报灯 jǐngbàodēng : đèn cảnh báo 
+-  眼睛 yǎnjing : mắt # 眼镜 yǎnjìng : kính 
+-  吃惊 chījīng ： ngạc nhiên = 惊讶 jīngyà 
+-  不会吧 bú huì ba : không phải chứ ? ( ngạc nhiên ) 
+-  正常：bình thườngzhèngcháng ; 异常 yìcháng ： bất thường 
+-  弹钢琴 tán gāngqín / 练 liàn 钢琴: chơi đàn, luyện đàn
+
+-  不过 búguò : nhưng 
+-  只不过 zhǐ búguò =只是 zhǐ shì : chỉ là, chỉ có điều 
+-  其实 qíshí :thực ra 
+-  一架钢琴 yí jià gāngqín : 1 cây đàn piano 
+-  鞋架 xiéjià : kệ để giày 
+-  书架 shūjià : giá sách 
+-  家 jiā : nhà 
+-  一个周末就过去: yí ge zhōumò jiù guòqù : hết 1 cái cuối tuần 
+-  一个星期已经过去了， 但是那件事我还没完事 yī gexīngqì yǐjīng guòqù 
+le , dànshì nàjiànshì háiméi wánshì ， 1 tuần đã qua, nhưng vẫn chưa giải 
+quyết xong chuyện đó. 
+-  不知不觉 bùzhībùjué ： bất giác, thấm thoát, vô tình, ko có ý định 
+-  约会 yūehuì ： hẹn hò 
+-  都 dōu ： đều / đã 
+-  空气 kōngqì : không khí; 空间 kōngjiān : không gian 
+-  有空儿 yǒukòngr = 不忙 bùmáng : rảnh 
+-  没空儿 mékòngr = 忙 máng : bận 
+-  电影院 diànyǐngyuàn ： rạp chiếu phim 
+-  住院 zhùyuàn ： nằm viện 
+-  开玩笑 kāi wán xiào ：đùa 
+-  段 duàn : đoạn, khoảng, quãng 
+-  一段路 yíduàn lù : 1 đoạn đường 
+-  谈了几段感情 tán le jǐ duàn gǎnqíng : từng yêu mấy người 
+-  谈恋爱 tán liàn ài : yêu đương 
+-  谈了一段时间 tán le yíduàn shíjiān : yêu 1 thời gian 
+-  原来 yuánlái ： hoá ra, vốn dĩ 
+-  跟 gēn .....开玩笑 kāiwánxiào : đùa với ai đó 
+-  大商场 dàshāngchǎng : trung tâm thương mại 商场 
+-  市场 shìchǎng : chợ
+
+-  差不多 chàbuduō ： xấp xỉ, khoảng, chừng, gần như, same same 
+-  发现 fāxiàn : phát hiện 
+-  从 cóng .....开始 káishǐ ：từ....trở đi 
+-  没用 méiyòng ：chưa dùng tới, vô dụng 
+-  结束 jiéshù : kết thúc 
+-  利用 lìyòng ： lợi dụng, tận dụng 
+-  有利有害 yǒulìyǒuhài : có lợi có hại 
+-  利益 lìyì : lợi ích 
+-  有利 yǒulì : có lợi 
+-  占我便宜 zhànwǒ piányì / 占便宜 zhàn piányì ：hời, ké, lợi dụng, chiếm ưu 
+thế 
+-  得便宜卖怪 dé piányì màiguài : vừa ăn cắp vừa la làng, thích còn ngại 
+-  成功 chénggōng : thành công 
+-  当然 dāngrán ： đương nhiên 
+Một số bổ ngữ kết quả hay gặp : 
+“上” làm bổ ngữ kết quả: 
+ Biểu thị hai sự vật trở lên tiếp xúc với nhau. Thí dụ: 
+(1) 窗户关上了. chuānghù guān shàng le . 
+(2) 请你们合上书，现在听写. qǐng nǐ men hé shàng shū ，xiàn zài tīng 
+xiě . 
+(3) 出门前, 你要锁上门吧. chū mén qián , nǐ yào suǒ( V ) shàng mén ba . 
+出门 chūmén =出去 chūqù 
+进门 jìn mén =进去 jìnqù 
+钥匙 yàoshi ( N ) : # 要是 yàoshì = 如果 rúguǒ 
+ Biểu thị một sự vật thêm vào một sự vật khác. Thí dụ: 
+(3) 怎么没录上? zěn me méi lù shàng ? 
+录音 lùyīn 
+(4) 你穿上这件大衣试试. nǐ chuān shàng zhè jiàn dàyī shì shì 
+ Biểu thị hành động nào đó đã đạt được mục đích, kết quả của nó. Thí dụ: 
+他终于考上大学了. tā zhōngyú kǎo shàng dàxué le .
+
+能帮上你, 我很高兴. néng bāng shàng nǐ , wǒ hěn gāo xìng 
+没帮上 méi bāng shang ， 谢什么 xiè shénme : chưa giúp được 
+爱上你 ài shang nǐ ，很快乐 hěn kuàile 
+203 
+So sánh giữa 上 và 开. 
+ “开” : 把两个关闭着的东西分离 Biểu thị hai vật tách rời nhau ra. 
+开门 kāimén = 打开门 dǎ kāi mén 
+(1)请你们打开书, 再读一遍. qǐng nǐ men dǎ kāi shū , zài dú yī biàn . 
+(2) 打开门 &gt;&lt;锁上门 
+dǎ kāi mén &gt;&lt;suǒ shàng mén 
+(3)张开口 &gt;&lt; 闭嘴 
+zhāng kāi kǒu &gt;&lt; bì zuǐ( shut up ) 
+(4)张开眼睛 &gt;&lt; 闭上眼睛 
+zhāng kāi yǎn jīng &gt;&lt; bì shàng yǎn jīng 
+到” Làm bổ ngữ kết quả 
+你到哪里了 nǐ dào nǎr le 
+ biểu thị động tác đã đạt đến mục đích. Thí dụ: 
+(1) 我找到王老师了. wǒ zhǎo dào Wáng lǎo shī le . 
+(2) 麦克买到那本书了. Mài Kè mǎi dào nà běn shū le . 
+ Biểu thị thông qua động tác làm cho sự vật đến được một địa điểm nào đó, 
+tân ngữ là từ chỉ địa điểm. Thí dụ: 
+(3) 我们学到第 三十课了. wǒ men xué dào sān shí kè le . 
+ Biểu thị động tác kéo dài đến thời gian nào đó. Thí dụ: 
+(4) 星期六早上我睡到九点才起床. xīngqīliù zǎoshàng wǒ shuì dào jiǔ 
+diǎn cái qǐ chuáng . 
+(5) 我每天晚上都学到十一二点. wǒ měi tiān wǎnshàng dōu xué dào 
+shí yī èr diǎn . 
+Bổ ngữ kết quả V + 住, 在, 着, 好, 成 
+Zhù, zài, zháo, hǎo, chéng 
+ 住: 站住, 记住, 拿住, 停住… 
+Dòngcí + zhù: Zhànzhù, jì zhù, ná zhù, tíng zhù…
+
+204 
+“住” làm bổ ngữ kết quả biểu thị thông qua động tác để kết thúc hoặc 
+cố định. Thí dụ: 
+停车 tíngchē ，停止 tíng zhǐ ， 
+(1) 车停住了. chē tíng zhù le . 
+Chē tíng hǎo le 
+(2) 你拿住这些东西吧. nǐ ná zhù zhè xiē dōng xī ba . 
+(3) A: 我的电话号码你记住了吗? wǒ de diàn huà hào mǎ nǐ 
+jì zhù le ma ? 
+B: 记住了. jì zhù le = 记得 jì dé 
+想念 xiǎng niàn 
+笔记本 bǐ jì běn 
+记下来 jì xià lái 
+笔记本电脑 bǐjìběn diànnǎo 
+ 在: 
+Biểu thị thông qua hành động làm cho người nào đó hoặc sự vật nào đó ở vào một nơi nào đó. 
+Tân ngữ là từ chỉ địa điểm.  
+Thí dụ: 
+(1)我去晚了, 坐在最后一排了. wǒ qù wǎn le , zuò zài zuì hòu yī 
+pái le 
+(2) A: 我的护照你放在哪儿了? wǒ de hù zhào nǐ fàng zài nǎr le ? 
+B: 就放在你的口袋里了. jiù fàng zài nǐ de kǒu dài lǐ le . 
+# 包包 bāobāo 
+(3) A: 这张画儿我们挂在哪儿呢? zhè zhāng huàr wǒ men guà zài nǎr ne ? 
+B: 挂在这儿吧. guà zài zhèr ba . 
+我挂个号 wǒ guà ge hào 
+挂电话 guà diànhuà 
+关机 guān jī 
+着 (zháo) 
+睡着, 找着, 买着, Shuì zháo, zhǎo zháo, mǎi 
+zháo,
+
+着火了 zháohuǒ le(cháy rồi)…. 
+表示动作的目的的达到了 Biểu thị đã đạt được mục đích của 
+hành động. Thí dụ: 
+(1)你要的那本书我给你买着了. nǐ yào de nà běn shū wǒ gěi nǐ mǎi 
+zháo le . 
+(2)我的护照你给我找着了没有? wǒ de hù zhào nǐ gěi wǒ zhǎo 
+zháo le méi yǒu ? 
+(3)你睡着了吗? nǐ shuì zháo le ma ? 
+你睡了吗？ nǐ shuì le ma ? 
+你睡觉了吗？ nǐ shuì jiào le ma ? 
+ 好 
+Biểu thị động tác hoàn thành và đã đạt đến mức độ hoàn thiện làm cho người ta cảm thấy hài 
+lòng.  
+Ví dụ: 
+(1) A: 老师布置的论文你写好了没有? lǎo shī bù zhì de lùn wén nǐ 
+xiě hǎo le méi yǒu ? 
+B: 早写好了. zǎo xiě hǎo le . 
+(2)昨天晚上我没睡好. zuó tiān wǎn shàng wǒ méi shuì hǎo . 
+(3) 我一定要学好汉语. wǒ yídìng yào xué hǎo hàn yǔ . 
+(4)我跟老板说好了, 晚回去几天. wǒ gēn lǎobǎn shuō hǎo le , wǎn 
+huí qù jǐ tiān . 
+206 
+昨天你睡得好吗？Zuótiān nǐ shuì dé hǎo ma ? 
+我跟他约好了？ wǒ gēn tā yuēhǎo le 
+帮我说话 bāng wǒ shuōhuà 
+跟波伟约好 gēn bōwěi yuēhǎo 
+我会学 的 WǑ HUÌ XUÉ DE 
+我学会了 WǑ XUÉ HUÌ LE 
+我学坏了 wǒ xué huài le 
+被你带坏了，bèi nǐ dài huài le
+
+被你带弯了 bèi nǐ dài wān le 
+ 成 
+Biểu thị một sự vật nào đó do động tác mà dẫn đến sự thay đổi 
+hoặc đã thực hiện được mục đích của động tác. Ví dụ: 
+(1)“an”这个音我常常发成“ang”. 
+“an” zhè gè yīn wǒ cháng cháng fā chéng “ang”. 
+(2) 我说 “去剧场” , 他听成“去机场”了. 
+wǒ shuō “qù jù chǎng ” , tā tīng chéng “qù jī chǎng ”le 
+(3)我的美元都換成了人民币. wǒ de měiyuán dōu huàn chéng le rénmínbì . 
+(4) 这本英文小说他已经翻译成中文了. zhè běn yīngwén xiǎoshuō tā yǐjīng fānyì 
+chéng zhōngwén le . 
+ 见: 看见, 听见, 闻见, 遇见 (gặp), 碰见(tình cờ gặp)…. 
+Jiàn: Kànjiàn, tīngjiàn, wén jiàn, yùjiàn (gặp), pèngjiàn (tình 
+cờ gặp)…. 
+刚好遇见你 gānghǎo yùjiàn nǐ 
+碰碰车 pèngpèngchē 
+娱乐场 yúlè chǎng 
+BTVN : Sắp xếp lại câu ( bài ôn bổ ngữ) HSK5: 
+1. 清楚 / 事情/你/把/说/必须 
+你必须把事情说清楚 
+2. 死/我/她同事/恨/了 
+我恨死了她同事、 她同事恨死了我 
+3. 把/伤/他/手/砍/了 
+他把手砍伤了/ 把他手砍伤了 
+4. 起/天空/升/明月/一轮 
+天空升起一轮明月 
+5. 今天/她/又/喝/醉/了 
+今天她又喝醉了 
+6. 得/鸡蛋/熟/了/吃/煮
+
+鸡蛋得煮熟了吃 
+7. 进来/里/飘/一张/房间/纸 
+房间里飘进来一张纸 
+8. 被/张红/骂/了/经理/哭 
+张红被经理骂哭了 
+9. 装/好/已经/了/复印机 
+复印机已经装好了 
+10. 被/晕/王东/吓/了 
+王东被吓晕了 
+11. 迅速/小偷/逃/走/跳窗 
+小偷迅速跳窗逃⾛了 
+12. 死/校园/里/吵/了 
+校园里吵死了 
+13. 已经/任务/好/了/分配 
+任务已经分配好了 
+14. 也/小问题/是/不了/避免/的 
+小问题是避免不了的 
+15. 已经/ 签证/我/ 办理/好 
+我已经办理好签证 
+16. 漏/ 汽油/ 全/光/了 
+汽油全漏光了 
+17. 已经/删除/信息/多余的/光/了 
+多余的信息已经删除光了 
+18. 调整/今年的/好/工作计划/已经/了 
+今年的工作计划已经调整好了 
+19. 把/笔/咬/她/都/断/了 
+她把笔都咬断了
+
+20. 阻止/我/不了/他的行为 
+他的行为我组织不了 
+21. 这么多/实在/不了/工作/完成 
+这么多工作实在完成不了 
+22. 激动得/张东/大喊/大叫 
+张东激动得大喊大叫 
+23. 惭愧得/头/李红/低下了 
+李红惨快得头低下了 
+24. 狡猾得/赵老板/像只/狐狸 
+赵老板狡猾得像只狐狸 
+25. 我/佩服得/ 对妈妈/不得了 
+我对妈妈佩服得不得了 
+26. 艰苦得/条件/这儿的/不得了 
+这儿的条件艰苦得不得了 
+27. 激烈/篮球比赛/昨晚的/极了 
+昨晚的篮球比赛激烈极了 
+28. 这次比赛的/参加/很/ 选手/业余得 
+参加这次比赛的选手业余得很 
+29. 这个/问得/太尖锐/问题 
+这个问题问得太尖锐 
+30. 发展得/现在的/大学生/很全面 
+现在的大学生发展得很全面 
+31. 很晚/今天/一直/工作/到/她 
+她今天一直工作到很晚 
+32. 他的/提高得/汉语水平/很快 
+他的汉语水平提高得很快
+
+Từ vựng trong nhà máy 
+1. Xí nghiệp, công ty, nhà máy 企业 qǐyè 、 单位 dānwèi 、 
+工厂 gōngchǎng ;会社 huìshè 
+黑社会 hēi shèhuì : xã hội đen 
+2. Tổng công ty ：总公司 Zǒng gōngsī 
+3. Chi nhánh, phân xưởng ：分厂/分公司 Fēn chǎng/fēn gōngsī 
+西贡 Xīgòng : Sài Gòn 
+4. Bộ phận ：部门 Bù mén 
+部分 bùfēn ： bộ phận, phần ( cơ thể người, máy móc ) 
+大部分 dà bùfēn : phần lớn 
+5. Bộ phận thu mua 采购部 cǎigòu bù 
+6. Bộ phận kinh doanh 销售部 xiāoshòu bù 
+7. Bộ phận sản xuất 生产部 shēngchǎn bù 
+产生 chǎnshēng : xảy ra, phát sinh 
+8. Bộ phận kho 仓库部门 cāngkù bùmén 
+库存 kùcún : tồn kho 
+9. Bộ phận chất lượng 品质部 pǐnzhì bù 
+质量 zhìliàng : chất lượng 
+产品 chǎnpǐn : sản phẩm 
+10. Bộ phận tài vụ ( ke toan) 财务部 cáiwù bù 
+11. Cố vấn 顾问 gùwèn 
+12. Trợ lý 助理 zhùlǐ 
+13. Phiên dịch 翻译 fānyì 
+14. Trưởng phòng 科长 kē zhǎng 
+15. Tổ trưởng 组长 zǔ zhǎng 
+16. Kế toán 会计 kuàijì 
+会 huì : biết
+
+丢三落四 diūsānlàsì : vứt bừa bãi, 
+落 luò : rơi, rớt 
+降落 jiàngluò : hạ cánh 
+17. Nhân sự 人事 rénshì/ 人资 rénzī 
+18. Tổng vụ 总务 zǒngwù 
+19. Thư ký 秘书 mìshū 
+秘密 mìmì : bí mật 舒服: shūfu : dễ chịu, thoải mái 
+20. Tài xế 司机 sījī 
+21. Kỹ thuật 技术 jìshù 
+22. Bảo vệ 保安 bǎo&#x27;ān， 门卫 ménwèi 
+保护安全 bǎohù ānquán : đảm bảo an 
+23. Nhiệm vụ 任务 rènwù 
+24. Hồ sơ 档案 dǎng&#x27;àn 
+25. Tư liệu 资料 zīliào :tài liệu, văn kiện 文件 wénjiàn 
+26. Công văn 公文 gōngwén 
+27. Bản sao 副本 fùběn 
+28. Hợp đồng 合同 hétóng 
+29. Tiền lương 薪资/工资/薪水 xīnzī/gōngzī/xīnshuǐ 
+发工资 fāgōngzī : phát lương 
+30. Chế độ 制度 zhìdù 
+31. Đãi ngộ 待遇 dàiyù 
+32. Phạt 惩罚 chéngfá； phạt tiền 罚款 fákuǎn， 罚钱, fá qián 
+33. Thưởng 奖励 jiǎnglì，tiền thưởng 奖金 jiǎngjīn 
+金总 jīnzǒng Mr Kim， 黄金 huángjīn :vàng， 现金 xiànjīn tiền mặt 
+朴 Piáo : Park 
+34. Thôi việc 离职、辞职 lízhí, cízhí 
+离职单 lízhídān : đơn thôi việc 
+Láobǎn 老板 ông chủ 
+Láobǎn niáng 老板娘 bà chủ， vợ của ông chủ
+
+35. Xin nghỉ 请假 qǐngjià 
+hē xǐjiǔ 喝喜酒 uống rượu mừng 
+cānjiā hūnlǐ 参加婚礼 tham gia hôn lễ 
+36. Được nghỉ 放假 fàngjià 
+Wùliào 物料 vật liệu ,yuánliào gènbúshàng 原料跟不上 liệu ko kịp 
+37. Nghỉ ốm 病假 bìngjià 
+38. Kéo dài thời hạn 延期 yánqī 签证 
+39. Quyết toán 结算 jiésuàn 
+40. Chuyển khoản 打款/ 转账/ 汇款 dǎ kuǎn/ zhuǎnzhàng/ huìkuǎn 
+41. Công tác 出差 chūchāi 
+差不多 chàbuduō : khoảng, xấp xỉ 
+42. Cổ phần 股份 gǔfèn 
+43. Thành phẩm 成品 chéngpǐn 
+44. Bán thành phẩm 半成品 bànchéngpǐn 
+45. Công đoạn 工段/ 环节 gōngduàn/ huánjié 
+46. Bao bì 包装 bāo zhuāng 
+47. Tem nhãn 标签 biāoqiān 
+tiē 贴: dán 
+48. Cổ phiếu 股票 gǔpiào 
+49. Thuế 税 shuì， 交税 jiāoshuì : nộp thuế= 纳税 nàshuì ； 免税: miễn thuế 
+VAT 增值税 zēngzhíshuì : thuế GTGT 
+进口税 jìn kǒu shuì : thuế nhập khẩu 
+个人税 gè rén shuì : thuế cá nhân 
+50. Bán cổ phiếu 卖股票 mài gǔpiào 
+51. Điều động 调动 diàodòng 
+52. Chủ tịch hội đồng quản trị 董事长 dǒngshì zhǎng 
+53. Hội đồng quản trị 董事会 dǒngshìhuì 
+54. Xuất nhập khẩu 进出口 jìn chū kǒu 
+Hǎiguān 海关 hải quan
+
+guānwù yuán 关务员 nghiệp vụ hải quan 
+hángyè 行业 ngành nghề, lĩnh vực 
+55. Bảo hiểm 保险 bǎoxiǎn 
+社会保险 shèhuì bǎoxiǎn : BHXH 、 失业保险 shīyè bǎoxiǎn BHTN、 
+医疗保险 yīliáobǎoxiǎn :BHYT 
+Jiāo 交 nộp 
+56. Thời hạn thử việc 试用期 shìyòng qī 
+57. Chuyển chính thức 转正 zhuǎnzhèng 
+58. Tăng lương 涨工资 zhǎng gōngzī 
+59. Nhân viên ưu tú 优秀员工 yōuxiù yuángōng 
+60. Bị đuổi việc 被炒鱿鱼/ 被赶走/解雇 bèi chǎoyóuyú/ bèi gǎn zǒu/jiěgù 
+61. Văn phòng 办公室 bàngōngshì 
+āyí 阿姨 dì, cô 
+小姨 xiǎoyí : dì ( e gái mẹ ) 
+62. Khu vực xưởng 车间/ 车间区域 chējiān/ chējiān qūyù 
+Chǎo 吵 ồn ào 
+Chǎo jià 吵架 cãi nhau 
+dǎ jià 打架đánh nhau 
+63. Họp 开会 kāihuì 
+64. Ăn liên hoan 会餐 huì cān 
+huǒguō火锅 lẩu 
+kǎoròu 烤肉 thịt nướng 
+65. Nịnh bợ sếp 拍...马屁 pāi... Mǎ pì / 巴结.... / bājié.... 
+66. Nói xấu đồng nghiệp 对同事说坏话 duì tóngshì shuō huàihuà 
+67. Người mới đến 新来的人/ 刚来的人 xīn lái de rén/ gāng lái de rén 
+68. Ăn lậu 吃回扣/ 捞油水 chīhuíkòu/ lāo yóushuǐ 
+69. Ăn trộm 偷东西 tōu dōngxī，kẻ trộm 小偷 xiǎotōu 
+偷偷 tōutōu : lén lút
+
+偷吃 tōuchī : ăn vụng 
+偷情 tōu qíng :ăn vụng( ngoại tình ) 
+70. Lời đồn 传言/ 风传 chuányán/ fēngchuán 
+CẤU TRUC CÂU CHỮ 把: 
+开门= 把门打开 
+把+ tân ngữ + V + thành phần # 
+发生交通事故，把人撞死了 fāshēng jiāotōngshìgù , bǎ rén zhuàngsǐ le : xảy ra 
+tai nạn giao thông, đâm chết người 
+撞车 zhuàngchē : đâm xe, tông xe 
+Dich cai bao cao nay sang tieng trung 
+Bǎ zhè ge bàogào fānyì chéng hànyǔ . 
+把这个报告翻译成汉语 
+-  Dùng để nhấn mạnh , Chú ý : 
+-  
+Động từ phải là động từ mang được tân ngữ 
+-  
+Sau V bắt buộc phải có thành phần khác ( như bổ ngữ hoặc trợ từ ngữ 
+khí,.....) 
+-  
+Các động từ năng nguyện hoặc phó từ phủ định như 
+能，应该，还 ， 不， 
+没 
+.....đều phải đặt trước 
+把 
+Bài tập câu chữ 把 ： 
+A： Dựa vào các từ gợi ý, dùng cấu trúc câu chữ 把 tạo thành câu có nghĩa : 
+1. 衣服/干净 
+2. 学生证/ 拿出来 
+3. 照片/送给朋友 
+4. 自行车/摔坏 
+5. 菜/切成小块儿
+
+6. 通知/贴在墙上 
+7. 足球/踢进门 
+8.蚊子/打死 
+B： đổi câu chữ 把 sau sang dạng phủ định 
+1. 哥哥把碗摔坏了 
+2. 我把学生证给他了 
+3. 弟弟把行李搬到公寓去了 
+4. 你应该把鸡蛋打到碗里 
+5. 他想把花送给张红 
+C. Đổi các câu sau sang dạng câu chữ 把 
+1. 你打开了那个电脑？ 
+2. 我弄丢了自己的钱包 
+3. 我们布置好了女儿的房间 
+4. 我弄坏了同事的照相机 
+5. 你带她回家吧 
+6. 姐姐送了我一件最可爱爱的礼物 
+7. 妈妈摔坏了奶奶的杯子 
+8. 哥哥买了蔬菜 
+9. 他擦桌子干净了没有？ 
+10. 衣服你放在洗衣机里吧</div>
+
+</div>
 </body>
 </html>

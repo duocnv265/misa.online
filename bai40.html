@@ -1,91 +1,102 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 40 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 40 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 40</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 40</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai40.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai40.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai40.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai40_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai40_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai40.jpg" alt="Bài 40">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai40_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">Lesson 40: 
+ 临出门前 lín chūmén qián : trước lúc ra khỏi cửa 
+ 出差 chūchāi : công tác 
+ 把钱花光了 bǎ qián huā guāng le : tiêu hết tiền 
+ 喝光了 hēguāng le : uống hết 
+ 连 lián …..都 dōu /也 yě ….: ngay cả… cũng … 
+ 只好:zhǐ hǎo: chỉ đành 
+ 除了 chúle ….以外 yǐ wài : ngoài … ra 
+ 好说话 hǎo shuōhuà ：dễ nói chuyện 
+ 不好说话 bù hǎoshuōhuà ：ko dễ nói chuyện ， 难沟通 nán gōutōng 
+ 请 qǐng ： Nhờ, hãy, làm ơn, mời, please 
+ 几乎 jīhū ： hầu như 
+ 没有不说好的 méiyǒu bù shuōhǎode : ko ai là ko nói tốt 
+ 把座位让给别人 bǎ zuòwèi ràng gěi biérén : nhường chỗ ngồi cho ng khác 
+ 孕妇 yùnfù ： thai phụ 
+ 怀孕 huái yùn : mang bầu 
+ 大的手术 dà de shǒushù : đại phẫu 
+ 空调 kōngtiáo : điều hòa 
+ 窗户 chuānghu : cửa sổ 
+ 省钱 shěngqián /电 diàn / 时间 shíjiān : tiết kiệm tiền/ điện/ thời gian 
+ 北江省 běijiāng shěng : tỉnh bắc giang 
+ 订饭 dìngfàn :đặt cơm 
+ 靠窗 kàochuāng : gần cửa sổ 
+ 4 号桌/ 4 hàozhuō : bàn số 4 
+ 脸拉得那么长 liǎn lā dé nàme cháng : mặt nặng; mặt kéo dài 
+ 警察 jǐngchá : cảnh sát 
+ 蔬菜 shūcài : rau 
+ 站在旁边 zhàn zài pángbiān : đứng bên cạnh
+
+快递 kuàidì : chuyển phát nhanh 
+ 递给我 dì gěi wǒ : đưa cho tôi 
+ 手边 shǒubiān : bên cạnh tay 
+ 结冰 jié bīng : đóng băng 
+ 这才几月啊 zhè cái jǐ yuè a : mới tháng mấy chứ 
+ 大衣 dàyī : áo khoác 
+ 叫我一声 jiào wǒ yì shēng : gọi tôi 1 tiếng 
+ 爱人ài rén : chồng hoặc vợ 
+ 一样的菜 yíyàng de cài : món giống nhau 
+ 通不过 bù tōngguò : ko thông qua 
+ 带孩子 dài háizi : trông con 
+ 一篇论文 yì biān kè wén : 1 bài luận văn 
+ 元旦 yuándàn : tết dương 
+ 外地 wàidì : bên ngoài( nơi khác) 
+ 本地 běndì : bản địa 
+ 亲切 qīnqiè : thân thiết 
+ 再生纸 zàishēngzhǐ : giấy tái sử dụng 
+ 感激 gǎn jī : cảm kích,cảm động 
+ 些 xiē :some , vài 
+ 寒假 hán jià : nghỉ đông 
+ 当老板 dāng lǎobǎn : làm chủ 
+ 托运费 tuōyùnfèi : phí kí gửi 
+ 两天一夜 liǎngtiān yī yè : 2 ngày 1 đêm 
+ 工厂 gōngchǎng: xưởng / 市场 shìchǎng : chợ 
+ 搬鱼 bān yú : vận chuyển cá 
+ 全国各地 quán guó gè dì : khắp nơi trên cả nước 
+ 卡车 kǎchē : xe tải 
+ 坐下 zuò xiàlái : ngồi xuống 
+ 喝口水 hē kǒushuǐ : uống ngụm nước
+
+腿都站不直了 tuǐ dōu zhàn bù zhí le : chân đứng ko thẳng 
+ 一顿饭 yī dùn fàn : 1 bữa cơm 
+ 苦 kǔ =幸苦 xīnkǔ : vất vả 
+ 不仅仅 bù jǐnjǐn : ko chỉ 
+ 为了 wèi le : vì 
+ 知识 zhīshi : kiến thức 
+ 经验 jīngyàn : kinh nghiệm</div>
+
+</div>
 </body>
 </html>

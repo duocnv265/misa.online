@@ -1,91 +1,415 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bài 22 - Học Online</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài 22 - Học Online</title>
+<style>
+body {font-family: Arial,sans-serif;background:#f9f9f9;margin:0;padding:10px;color:#333;}
+.container {max-width:900px;margin:auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+a.back {display:inline-block;margin-bottom:15px;text-decoration:none;color:#007bff;}
+h1,h2 {color:#222;}
+audio {width:100%;margin:8px 0;}
+img.lesson {width:100%;border-radius:10px;margin:10px 0;}
+.vocab {background:#f1f3f5;padding:15px;border-radius:8px;white-space:pre-wrap;}
+.missing {color:#888;font-style:italic;}
+</style>
 </head>
 <body>
-  <div class="container">
-    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
-    <h1>Bài 22</h1>
+<div class="container">
+<a href="index.html" class="back">⬅ Quay lại danh sách</a>
+<h1>Bài 22</h1>
 
-    <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai22.pdf"></iframe>
+<h2>🔊 Nghe bài học</h2>
+<audio controls><source src="audio/bai22.mp3" type="audio/mpeg"></audio>
 
-    <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
-      <audio controls>
-        <source src="audio/bai22.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
+<h2>🎧 Nghe từ mới</h2>
+<audio controls><source src="audio/bai22_tumoi.mp3" type="audio/mpeg"></audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
-      <audio controls>
-        <source src="audio/bai22_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
-      </audio>
-    </div>
+<h2>📖 Bài học chính</h2>
+<img class="lesson" src="img/bai22.jpg" alt="Bài 22">
 
-    <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai22_tumoi.pdf"></iframe>
-  </div>
+<h2>📘 Từ mới mở rộng</h2>
+<div class="vocab">LESSON 22 : 
+ 喜 xǐ: chữ Hỷ 
+ 福 fú : Phúc 
+ 到 dào: đến 倒 dào : ngược, rót ( trà, rượu, nước ) 
+ 倒茶 dào chá : rót trà , 
+ 鱼 YÚ # 余 yú 
+ 水平 LEVEL shuǐpíng 
+ 费用 fèiyòng : Chi phí 
+ 电费 diànfèi : tiền điện 
+ 毕业 bì yè : tốt nghiệp 
+ 这个世界上没有免费的午餐 . 
+zhè ge shìjiè shang měiyǒu miǎnfèi de wǔcān : trên đời này ko có gì là miễn phí 
+ 喝喜酒 hē xǐjiǔ = 参加婚 礼 cānjiā hūnlǐ : ăn cưới 
+ 上大学 shàng dàxué = 读大学 dú dàxué : học đại học 
+ 对 duì ...... 不满意 bù mǎnyì ？： không hài lòng về.… 
+ 吃药 chīyào 
+ 喝粥: cháo loãng 
+ 稀饭: cháo đặc 
+ 吃饭吗？Ăn cơm không ? 
+ 吃饭了吗？了没、 了没有 ăn cơm chưa ? 
+ 吃饭了！Ăn cơm rồi 
+ 态度 tàidù : thái độ 
+ 跟 gēn .....说 shuō : nói với .... 
+ 放暑假 fàng shǔ jià / 放寒假 fàng hánjià : nghỉ hè/ nghỉ đông 
+ 别 bié = 不要 búyào : đừng 
+ 长 cháng *宽 kuān *高 gāo : dài rộng cao 
+ 这次 zhè cì : lần này 
+ 下次再努力 xiàcì zài nǔlì : Lần sau lại cố gắng
+
+HSK ; HSKK 
+ 不错 búcuò : tuyệt, giỏi, ko tệ 
+ 成绩 chéngjì : thành tích 
+ 成就 chéngjiù : thành tựu 
+ 成就感 chéngjiù gǎn ：cảm giác thành công( tự hào khi đạt 1 điều gì đó) 
+ 安全感ānquán gǎn ： cảm giác an toàn ( khi yêu ai đó) 
+ 长得很安全 zhǎng dé hěn ānquán ：ngoại hình rất an toàn ( ý là xấu trai , xấu gái ) 
+ 让 ràng : để/ khiến/ bảo 
+ 着急 zháojí : nóng vội; 急 jí : vội, gấp; 急救 jíjiù : cấp cứu 
+ 一顶帽子 yì dǐng màozi : 1 chiếc mũ 
+ 双 Shuāng ： đôi 
+ 带 dài ： mang, cầm, đem 
+ 长 cháng : dài 
+ 万里长城 wàn lǐ cháng chéng : Vạn Lý Trường Thành 
+ 长 得很漂亮 zhǎng dé hěn piàoliang : trông xinh đẹp 
+ 越长大越孤单 yuè zhǎngdà yuè gūdān : càng lớn càng cô đơn ( tên bài hát ) 
+ 长大 zhǎngdà : lớn 
+ 陪 péi : cùng; 带 dài : dẫn, đưa, mang 
+ 送她去医院 sòng tā qù yīyuàn: đưa đi viện ; 带她去看病 dài tā qù kànbìng : đưa đi khám 
+bệnh 
+ 酷 kù : ngầu; 哭 kū : khóc / 笑 xiào : cười 
+ 不是 búshì .....ma 吗？ / le ma 了吗？ Không phải.......... sao 
+我说他了 wǒshuō tā le : tôi nói ( mắng ) anh ta rồi # 
+我跟他说了 wǒ gēn tā shuō le = 我跟她讲了 wǒ gēn tā jiǎng le = 我告诉他了 
+wò gàosu tā le : tôi nói với anh ta rồi 
+ 马上 mǎshàng ： lập tức ( 立即 lìjí ，立刻 lìkè: bút ngữ ) 
+ 双 shuāng : đôi 
+ 陪 péi : cùng 
+ 一封信: yì fēng xìn :1 bức thư
+
+一个信封 yí ge xìn fēng : 1 cái phong bì 
+ 另外 lìngwài ：ngoài ra, 
+ 再买 5 张邮票 zài mǎi wǔ zhāng yóupiào : mua thêm 5 cái tem thư 
+ 桌子上 zhuōzi shàng : trên bàn 
+ 刚才 gāngcái : vừa nãy 
+ 我刚刚毕业 wǒ gānggāng bìyè : vừa tốt nghiệp 
+ 那个时候 nà ge shíhou : lúc ấy 
+ 有点儿 yǒu diǎnr : hơi 
+ 旁边 páng biān: bên cạnh 
+ 身边 shēnbīan: bên cạnh ( về tinh thần) 
+ 做作业 xiě zuòyè = 写作业 xiě zuòyè : làm bài tập 
+ 一点小感冒 yì diǎn xiǎo gǎnmào : cảm nhẹ 
+ 而且ér qiě : hơn nữa, mà còn, vả lại 
+ 桌子 zhuōzi: bàn 
+ 椅子 yǐzi: ghế tựa; 凳子 Dèngzi : ghế băng 
+ 上 shàng:lên/ trên; 上楼 shànglóu: lên tầng; 楼上 lóushàng: tầng trên 
+ 下 xià : xuống/ dưới; 下楼 xiàlóu : xuống tầng; 楼下 lóuxià ：tầng dưới 
+ 告诉 gàosu: bảo, nói cho biết = 跟 gēn + đối tượng +说 shuō / 讲 jiǎng : 
+ 跟我读 gēnwǒdú : đọc theo tôi / 跟我走 gēnwǒzǒu : đi theo tôi 
+ 再 zài : lại/ thêm/ nữa/tiếp 
+ 电影票 diànyǐngpiào : vé xem phim 
+ 车票 chēpiào : vé xe; 邮票 yǒupiào : tem thư 
+ 又 yòu : lại 
+ 是否 shìfǒu ：phải hay không 
+ 跟你无关 gēn nǐ wúguān : ko liên quan đến m 
+ 无 wú ：không 
+ 无语 wúyǔ ： cạn lời 
+ 下次再来 xiàcì zàilái : lần sau lại đến 
+ 又来了 yòulái le : lại đến rồi ( ý ko vui ), lại bắt đầu ( càm nhàm ) 
+ Diễn tả đang hẹn hò với ai đó:
+
+跟 gēn + đối tượng+ 谈恋爱 tán liàn ài : 
+ 他好像在谈恋爱. Hình như anh ta đang bàn chuyện làm ăn 
+ 谈生意 tán shēngyì : nói chuyện làm ăn 
+ 做生意 zuò shēngyì: làm ăn, kinh doanh 
+ 打工 Dǎgōng :đi làm thuê 
+ 田螺 tiánluó ： ốc đồng 
+螺丝 luósī ： ốc vít, ốc mà dài dài 
+美味的麻辣螺丝 : měi wèi de málà luósī : ốc cay tê mỹ vị ( ngon) 
+麻辣鸭脖 málà yābó : cổ vịt cay 
+不懂美食 bù dǒng měishí : ko biết thưởng thức ẩm thực 
+我的腿麻了 wǒ de tuǐ má le : chân bị tê 
+ Từ vựng về chủ đề yêu đương 
+ 可爱 kě ài :đáng yêu 
+ 初恋 chūliàn : tình đầu 
+ 初年 Chūnián: đầu năm 
+ 年底 nián dǐ : cuối năm 
+ 网恋 wǎngliàn : tình yêu online 
+ 留恋 liúliàn :lưu luyến 
+ 前女友 qián nǚ you /前男友 qián nán you : người yêu cũ/ 前任 qiánrèn ( tiền nhiệm) 
+ 现任： đương nhiệm 
+ 一脚踏两船： Bắt cá 2 tay, 1 chân đạp 2 thuyền 
+自恋 zìliàn : tự sướng ( yêu bản thân, giỏi nhất, xinh nhất, ....) 
+自作聪明： tự cho mình là thông minh 
+力不从心： lực bất thành tâm 
+ 自拍 zìpāi :tự sướng( tự chụp ảnh ) 
+ 拍照 pāizhào :chụp ảnh = 照相 zhàoxiàng 
+ 照相馆 zhàoxiàngguǎn : studio 
+ 照片 zhàopiàn :bức ảnh 
+ 照相机 Máy ảnh : zhàoxiàngjī 
+ Diễn tả hứng thú với vấn đề nào đó hoặc không ?
+
+对 duì ......感兴趣 gǎnxìngqù / 没兴趣 méixìngqù : 
+ 不错 búcuò : tuyệt, được( khen) / 觉得 juéde :cảm thấy 
+ 地址 dìzhǐ:địa chỉ / 辆 liàng : lượng từ cho xe cộ/ 好好 hǎo hao : hẳn hoi, nghiêm túc 
+Một số cách dịch từ “làm” sang tiếng trung: 
+上班 shàngbān =工作 gōng zuò : đi làm 
+ 当 dāng ( chỉ nghề nghiệp ) 老师 lǎoshī ， 医生 yīshēng 
+ 办 bàn ( làm thủ tục hành chính , giấy tờ) 
+签证 qiānzhèng : visa，护照 hùzhào : hộ chiếu ， 手续 shǒuxù :thủ tục 
+ 做 zuò ( phổ biến) 
+ 干 gàn ( khẩu ngữ ) 
+ 搞 gǎo ( khẩu ngữ) 
+ 弄 nòng ( khẩu ngữ) 
+Ví dụ : 
+1. Mày đang làm gì đấy ? 
+啥 shá =什么 shénme : cái gì ? người miền Bắc 
+ 你在做什么？nǐ zài zuò shénme ? 
+ 你在干什么？nǐ zài gàn shénme ? 
+ 你在干嘛？nǐ zài gàn mǎ ? 
+ 你在干啥？nǐ zài gàn shá ? 
+ 你在搞什么鬼 nǐ zài gǎo shénme guǐ ? ( ko dc dùng với cấp trên ) 
+ 你在搞什么 nǐ zài gǎo shénme ? ( ko dc dùng với cấp trên ) 
+恐怖片 kǒngbùpiàn : phim kinh dị 
+鬼片 guǐpiàn : phim ma 
+困难 kùnnán :khó khăn 
+片 piàn = 电影 diànyǐng : phim 
+动画片 dònghuàpiàn :phim họat hình 
+2. Tôi làm giáo viên 
+ 我当老师 wǒ dāng lǎoshī 
+3. Bố tôi ở nhà làm ruộng 
+ 我爸爸在家种田 wǒ bàba zài lǎojiā zhōng tián = 种地 zhōngdì 
+4. Tôi làm ở Hồng Hải( Foxconn) .
+
+我在鸿海（富士康）上班（工作） 
+wǒ zài hóng hǎi (fùshìkāng ) shàngbān / gōngzuò. 
+5. Tôi làm visa cho người nước ngoài 
+ 我给外国人办签证 wǒ gěi wàiguórén bàn qiānzhèng 
+ Phân biệt 搞 gǎo &amp; 弄 nòng : 
+ Đều dùng cho các động tác thực hiện bằng tay, trong các trường hợp sau 
+thay thế được cho cho nhau. 
+ Đói rồi, làm chút gì đó ăn đi ! 
+ 肚子饿了，搞（弄）点什么吃的吧！ 
+Dùzi è le, gǎo ( nòng ) diǎn shénme chī de ba ! 
+ Sau 
+搞 
+va 
+弄 
+, thường mang các bổ ngữ sau: 
+错 
+cuò, 
+清楚 
+qīngchu , 
+明白 
+míngbái, 
+乱七八糟 
+luànqībāzāo , 
+成 
+chéng , 
+好 
+hǎo, 
+对 
+duì, 
+出来 
+chūlái ... 
+Ví dụ: 
+ 对不起，我搞错了你们俩的名字 = 打错 dǎcuò /写错 xiě cuò 
+duìbuqǐ, wǒ gǎo ( nòng ) cuò le nǐmen liǎ de míngzi
+
+Xin lỗi, tôi viết sai tên 2 bạn rồi 
+ 我搞不清楚，为什么你喜欢他 
+wǒ gǎo ( nòng ) bu qīngchǔ, wèishénme nǐ xǐhuan tā 
+Tôi không hiểu rõ, tại sao bạn lại thích anh ta 
+ 你们怎么把房间搞成这个样子 
+nǐmen zěnme bǎ fángjiān gǎo ( nòng ) chéng zhège yàngzi 
+Tại sao bọn mày làm cái phòng biến thành bộ dạng này ? 
+ 房间刚刚搞好，又被小孩搞乱七八糟 
+fángjiān gānggāng gǎo hǎo, yòu bèi xiǎohái gǎo ( nòng ) luànqībāzāo 
+Vừa dọn phòng xong, lại bị bọn trẻ con làm lộn xộn. 
+ Trong 1 số trường hợp, nòng không thay thế được gǎo : 
+Ví dụ : 
+ Làm việc nhà : 做家务 zuò jiāwù = 搞家务 gǎo jiāwù 
+ Dọn vệ sinh: 搞卫生 gǎo wèishēng = 打扫卫生 dǎsǎo wèishēng 
+ Tạo quan hệ : 搞关系 gǎo guānxì = 拉关系 lā guānxì 
+人脉 rénmài : mối quan hệ xã hội 
+ Tổ chức hoạt động: 搞活动 gǎo huódòng = 举行活动 jǔxíng 
+huódòng 
+ Tìm đối tượng: 搞对象 gǎo duìxiàng =找对象 zhǎo duìxiàng 
+ Làm trò: 搞鬼 gǎo guǐ 
+怎么自行车又没气了，是谁搞的鬼？—） 
+Zěnme zìxíngchē yòu méi qì le, shì shéi gǎo de guǐ ? 
+怕鬼 pà guǐ : sợ ma 
+鬼片 guǐpiàn : phim ma 
+ Giải quyết xong: 搞定 gǎo dìng 
+房子的事，到现在我还没搞定 
+Fángzi de shì , dào xiànzài wǒ hái méi gǎo dìng 
+ Không hiểu nổi:搞不懂 gǎo bù dǒng 
+ Một số trường hợp, 弄 nòng có thể thay thế = 
+搞 
+gǎo : 
+Nấu cơm: 做饭 zuòfàn = 弄饭 nòng fàn =煮饭 zhǔ fàn = 搞饭 gǎo fàn
+
+Làm tóc: 弄头发 nòng tóufa = 搞 gǎo tóufa 
+Làm hỏng : 弄坏了 nòng huài le = 搞 gǎo huài le 
+Làm bẩn: 弄脏了 nòng zāng le = 搞 gǎo zāng le 
+Làm mất : 弄丢了 nòngdiū . 钱包 qiánbāo : ví 
+ Phân biệt 做 zuò va 干 gàn 
+做 
+zuò : phổ biến, chỉ việc cụ thể, rõ ràng, nhiều loại tân ngữ đi 
+kèm 
+Ví dụ: ( ko dùng 干 gàn thay thế được ) 
+ 做饭 zuò fàn : nấu cơm 
+ 做作业 zuò zuòyè : làm bài tập 
+ 做手术 zuò shǒushù : làm phẫu thuật 
+ 做手续 zuò shǒuxù ：làm thủ tục 
+ 做生意 zuò shēngyì : làm kinh doanh， 
+最近生意不好做， 很多公司没有订单，都要倒闭 
+Zuìjìn shēngyì bù hǎozuò , hěnduō gōngsī méiyóu dìngdān (PO ) , dō 
+u yào dǎobì le . ( Dạo này làm ăn khó lắm, rất nhiều công ty ko có đơn 
+hàng, đều phải đóng cửa/ phá sản ) . 
+ 做梦 zuò mèng : nằm mơ 
+干 
+gàn : chỉ việc chung chung, không cụ thể, tân ngữ hạn chế. 
+干 
+gàn : thường chỉ việc nặng nhọc, mất nhiều sức 
+ 干活 gànhuó : làm việc ( chân tay) 
+ 干得满头大汗 gàn dé mǎn tóu dà hàn : làm đến nỗi mồ hôi đầm đìa 
+ Chū hàn 出汗: toát mồ hôi 
+ Hàn shuǐ 汗水: mồ hôi 
+ĐỘNG TỪ LI HỢP 
+上课 shàngkè: lên lớp 上汉语课 shàng hànyǔ kè 
+加班 jiābān : tăng ca 加了很多班 jiā le hěn duō bān 
+出差 chūchāi : công tác 出了一趟差 chū le yí tàng chāi ( 差不多 chà bu duō:
+
+same same ） 
+下班 xiàbān: Tan làm 下什么班 xià shénme bān 
+下课 Xiàkè: Tan học 等下了课 děng xià le kè 
+下雨 xià yǔ: mưa 下小雨 xià xiǎoyǔ ， 下大雨 xià dà yǔ 
+住院 zhùyuàn: nhập viện 住完院后 zhù wán yuàn hòu 
+发火 fāhuǒ: tức giận 发起火 fā qǐ huǒ ， 发什么火 fā shénme huǒ 
+发烧 fāshāo: sốt 发低烧 fādīshāo ， 发高烧 fāgāoshāo 
+唱歌 chàng gē: hát hò 唱中文歌 chàng zhōngwén gē 
+失业 shīyè: thất nghiệp 失了业 shīle yè 
+帮忙 bāngmáng: giúp đỡ帮个忙 bāng ge máng ， 帮不上忙 bāng bú shàng máng 
+打架 dǎjià: đánh nhau 打什么架 dǎ shénme jià 
+操心 cāoxīn: lo lắng 操破了心 cāo pò le xīn ，什么操什么心 shénme cāo 
+shénme xīn 
+放假 fàngjià: nghỉ phép 放两天假 fàng liǎng tiān jià 
+散步 sànbù: dạo bộ 散半个小时的步 sànbù 
+毕业 bìyè: tốt nghiệp 毕不了业 bì bù liǎo yè 
+洗澡 Xǐzǎo: Tắm giặt 洗热澡， 洗个澡 
+游泳 yóuyǒng: bơi lội 游会泳 yóu huì yǒng 
+爬山 páshān: Leo núi 爬了一天山 pá le yī tiān shān 
+生气 shēngqì: tức giận 生我的气 đừng giận tôi # qì wǒ 气我 chọc tức tôi 
+生病 shēngbìng: bị bệnh 生什么病 shēng shénme bìng 
+睡觉 Shuìjiào: Đi ngủ 睡懒觉 shuì lǎn jiào ，睡午觉 shuì wǔ jiào 
+离婚 líhūn: li hôn 离什么婚 lí shénme hūn 
+结婚 jiéhūn : kết hôn 结过婚 jié guò hūn 
+考试 kǎoshì: kiểm tra 考一次试 kǎo yí cì shì 
+聊天 liáotiān: tán dóc 聊会天 liáo huì tiān 
+见面 jiànmiàn: gặp mặt 见个面 jiàn ge miàn 
+请假 Qǐngjià: xin nghỉ phép 请半天假 qǐng bàn tiān jià 
+谈话 tánhuà: nói chuyện 谈什么话 tán shénme huà 
+起床 qǐchuáng: thức dậy 起早床 qǐ zǎo chuáng
+
+跑步 pǎobù: chạy bộ 跑个小时的步 
+跳舞 tiàowǔ: nhảy 跳街舞 tiào jiē wǔ , nhảy hiphop 
+道歉 dàoqiàn: xin lỗi 道个歉 dào ge qiàn 
+鼓掌 gǔzhǎng: vỗ tay 鼓起掌 gǔ qǐ zhǎng 
+报名 bàomíng ：báo danh 报了名 bào le míng 
+排队 páiduì Xếp hàng 排着队 pái zhe duì 
+照相 zhàoxiàng Chụp ảnh 照完相 zhào wán xiàng 
+搬家 bān jiā: chuyển nhà ， 
+拜年 bàinián : chúc tết，比赛 bǐsài : trận đấu, thi đấu，吃亏 chīkuī: chịu thiệt, 
+thua lỗ ，吃惊 chījìng: ngạc nhiên ，分手 fēnshǒu : chia tay，干活 gànhuó: làm 
+việc ，过年 guònián: ăn Tết ，开会 kāi huì: họp ，开学 kāi xué : khai giảng，开 
+业 kāiyè: khai trương，留学 liúxué: du học ，签名 qiānmíng: kí tên ，让步 
+ràngbù: nhường, nhượng bộ ，上网 shàngwǎng: online ，踢球 tīqiú: đá bóng ， 
+约会 yuēhuì : hẹn hò 
+Đặc điểm lớn nhất của động từ li hợp đó chính là không thể trực tiếp mang tân ngữ vì kết cấu 
+của nó đã bao gồm tân ngữ. 
+Kết cấu ngữ pháp 
+Động từ li hợp là một từ nhưng lại có hai từ tạo thành (hợp) nhưng khi sử dụng lại tách ra (ly). 
+Đối lập với động từ ly hợp thì trong tiếng Trung đại bộ phận từ vựng không thể tách ra sử dụng 
+được. 
+1. Động từ li hợp (AB) không trực tiếp mang tân ngữ, có hai trường hợp sau: 
+Trường hơp 1: Tân ngữ đặt giữa động từ li hợp: A + Tân ngữ + (的) B 
+他生了你的气。(Tā shēng le nǐ de qì). anh ta giận bạn 
+你可以帮我的忙吗？(Nǐ kěyǐ bāng wǒ de máng ma?). bạn có thể giúp tôi không ? 
+Trường hơp 2: Tân ngữ đứng trước động từ li hợp nhưng phải đi kèm với giới từ: 
+介词 +Tân ngữ +AB 
+我们晚上没有跟他见面。(Wǒmen wǎnshang méiyǒu gēn tā jiànmiàn). tối nay 
+chúng tôi không gặp anh ta 
+这次是你错了，你应该向他道歉。(Zhè cì shì nǐ cuòle, nǐ yīnggāi xiàng tā 
+dàoqiàn. Lần này là lỗi của mày, mày nên xin lỗi nó đi 
+#2. Động từ li hợp khi kết hợp với bổ ngữ thời lượng có 2 trường hợp như sau: 
+Trường hơp 1:
+
+Khi biểu thị động tác đang tiến hành và duy trì trong thời gian bao lâu,bổ ngữ thời 
+lượng như三个小时，十年…thường đặt giữa động từ li hợp: 
+A (了) + Bổ ngữ + (的+) B 
+我洗了半小时的澡。(Wǒ xǐ le bàn xiǎoshí de zǎo). : tôi tắm nửa tiếng 
+他们散了一会儿步。(Tāmen sàn le yīhuir bù). họ đi dạo 1 lát 
+Trường hơp 2: 
+Khi biểu thị động tác đã hoàn thành được một khoảng thời gian nào đó, không 
+mang nghĩa kéo dài, bổ ngữ thời lượng thường đặt sau động từ li hợp: 
+AB + Bổ ngữ (+了) 
+我姐姐毕业三年了。(Wǒ jiějie bìyè sān nián le). chị tôi tốt nghiệp 3 năm rồi 
+他们离婚一年多了。(Tāmen líhūn yī nián duō le).. bọn họ li hôn hơn 1 năm rồi 
+#3. Động từ li hợp không thể trực tiếp mang bổ ngữ trình độ “ 
+得” 
+: 
+他唱歌得很好。(X) 
+Tā chànggē de hěn hǎo. 
+他游泳得很好。(X) 
+Tā yóuyǒng de hěn hǎo. 
+Có thể sửa theo 2 cách sau： 
+Cách #1: 
+Chủ ngữ + động từ + tân ngữ + động từ + 得 + Bổ ngữ trạng thái 
+CN + V + O + V + 得 + Bổ ngữ 
+Lặp lại động từ li hợp: 
+他唱歌唱得很好。(Tā chàng gē chàng de hěn hǎo). anh ấy hát rất hay 
+他游泳游得很好。(Tā yóuyǒng yóu de hěn hǎo). anh ấy bơi rất tốt 
+Cách #2: 
+Chủ ngữ + tân ngữ + động từ + 得 + Bổ ngữ trạng thái 
+CN + O + V+ 得 + Bổ ngữ 
+他歌唱得很好。(Tā gē chàng de hěn hǎo). 
+他泳游得很好。(Tā yǒng yóu dé hěn hǎo). 
+#4. Động từ li hợp khi đi kèm với 
+了，着，过 
+thường sử dụng như sau
+
+： 
+Khi động từ mang 着，过: 
+A + 着+ B; A +过 + B 
+ví dụ: 
+187 
+他们俩正吵着架，你去劝劝吧。(Tāmen liǎ zhèng chǎo zhe jià, nǐ qù quàn quàn 
+ba). bọn nó đang cãi nhau, mày đi khuyên đi 
+她从来没跟男人跳过舞，有点不好意思。(Tā cónglái méi gēn nánrén tiàoguò 
+wǔ, yǒudiǎn bù hǎoyìsi). 
+Cô ấy trước giờ chưa từng nhảy với đàn ông, có chút ngại ngùng 
+Khi động từ mang 了: 
+Biểu thị động tác đã hoàn thành, 了 thường đặt sau động từ li hợp: 
+ví dụ: 
+我们吃完饭以后，一起去散了半个小时步。 
+(Wǒmen chī wán fàn yǐhòu, yīqǐ qù sàn le bàn gè xiǎoshí bù 
+Chúng ta sau khi ăn , cùng đi dạo nửa tiếng 
+Biểu thị sự thay đổi của trạng thái, 了 thường đặt sau động từ li hợp: 
+他们吃完饭以后出去散步了。(Tāmen chī wánfàn yǐhòu chūqù sànbùle. 
+Bọn họ sau khi ăn ra ngoài đi dạo rồi 
+#5. Hình thức lặp lại của động từ li hợp là AAB chứ không phải ABAB như 
+động từ thông thường 
+帮帮忙 /Bāng bāng máng/ giúp đỡ 
+打打球 /Dǎ dǎ qiú/ đánh bóng 
+见见面 /Jiàn jiàn miàn/ gặp mặt 
+散散步 /Sàn sàn bù/ : đi dạo 
+Ví dụ： 
+我常常聊聊天，上上网。(Wǒ chángcháng liáo liáotiān, shàng shàngwǎng). 
+Chúng tôi thường xuyên, nói chuyện, lên mạng online</div>
+
+</div>
 </body>
 </html>
