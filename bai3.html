@@ -5,61 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bài 3 - Học Online</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 10px;
-    }
-
-    .container {
-      width: 95%;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    a.back {
-      display: inline-block;
-      margin-bottom: 15px;
-      text-decoration: none;
-      color: #007bff;
-    }
-
-    h1, h2 {
-      margin-top: 15px;
-      color: #222;
-    }
-
-    iframe {
-      width: 100%;
-      height: 70vh;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-
-    .audio-section {
-      background: #f1f3f5;
-      padding: 15px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 60vh;
-      }
-    }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; margin: 0; padding: 10px; }
+    .container { width: 95%; max-width: 1000px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    a.back { display: inline-block; margin-bottom: 15px; text-decoration: none; color: #007bff; }
+    h1, h2 { margin-top: 15px; color: #222; }
+    .audio-section { background: #f1f3f5; padding: 15px; border-radius: 8px; margin-top: 20px; }
+    audio { width: 100%; margin-top: 8px; }
+    .pdf-viewer { width: 100%; height: 70vh; border: 1px solid #ccc; border-radius: 6px; margin-top: 10px; overflow: auto; }
+    canvas { width: 100% !important; height: auto !important; display: block; margin-bottom: 10px; }
   </style>
 </head>
 <body>
@@ -68,24 +21,53 @@
     <h1>Bài 3</h1>
 
     <h2>📖 Bài học chính</h2>
-    <iframe src="pdf/bai3.pdf"></iframe>
+    <div id="pdf1" class="pdf-viewer"></div>
 
     <div class="audio-section">
-      <h2>🔊 Nghe bài học</h2>
+      <h2>🔊 Nghe bài đọc</h2>
       <audio controls>
         <source src="audio/bai3.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
+        Trình duyệt của bạn không hỗ trợ nghe audio.
       </audio>
 
-      <h2>🎧 Nghe từ mới cô đọc</h2>
+      <h2>🎧 Nghe từ mới</h2>
       <audio controls>
         <source src="audio/bai3_tumoi.mp3" type="audio/mpeg">
-        Trình duyệt của bạn không hỗ trợ audio.
+        Trình duyệt của bạn không hỗ trợ nghe audio.
       </audio>
     </div>
 
     <h2>📘 Từ mới mở rộng</h2>
-    <iframe src="pdf/bai3_tumoi.pdf"></iframe>
+    <div id="pdf2" class="pdf-viewer"></div>
   </div>
+
+  <!-- PDF.js CDN -->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <script>
+    function renderPDF(url, containerId) {
+      var pdfjsLib = window['pdfjs-dist/build/pdf'];
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+
+      var loadingTask = pdfjsLib.getDocument(url);
+      loadingTask.promise.then(function(pdf) {
+        var container = document.getElementById(containerId);
+        container.innerHTML = '';
+        for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+          pdf.getPage(pageNum).then(function(page) {
+            var viewport = page.getViewport({ scale: 1.5 });
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            container.appendChild(canvas);
+            page.render({ canvasContext: context, viewport: viewport });
+          });
+        }
+      });
+    }
+
+    renderPDF('pdf/bai3.pdf', 'pdf1');
+    renderPDF('pdf/bai3_tumoi.pdf', 'pdf2');
+  </script>
 </body>
 </html>
