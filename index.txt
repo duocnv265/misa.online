@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh sách bài học</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    ol {
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      background: #fff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      list-style: none;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Danh sách 40 bài học</h1>
+  <ol>
+    <!-- Tự thêm link cho từng bài -->
+    <li><a href="bai1.html">1. Bài 1</a></li>
+    <li><a href="bai2.html">2. Bài 2</a></li>
+    <li><a href="bai3.html">3. Bài 3</a></li>
+    <li><a href="bai4.html">4. Bài 4</a></li>
+    <li><a href="bai5.html">5. Bài 5</a></li>
+    <!-- ... lặp đến bài 40 -->
+  </ol>
+</body>
+</html>

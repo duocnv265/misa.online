@@ -1,0 +1,17 @@
+/hoc-online-demo/
+│
+├── index.html
+├── bai1.html
+├── bai2.html
+│
+├── pdf/
+│   ├── bai1.pdf
+│   ├── bai1_tumoi.pdf
+│   ├── bai2.pdf
+│   ├── bai2_tumoi.pdf
+│
+└── audio/
+    ├── bai1.mp3
+    ├── bai1_tumoi.mp3
+    ├── bai2.mp3
+    ├── bai2_tumoi.mp3

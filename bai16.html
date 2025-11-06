@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 16 - Học Online</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    a.back {
+      display: inline-block;
+      margin-bottom: 15px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    h1, h2 {
+      margin-top: 15px;
+      color: #222;
+    }
+
+    iframe {
+      width: 100%;
+      height: 70vh;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .audio-section {
+      background: #f1f3f5;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 60vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back">⬅ Quay lại danh sách</a>
+    <h1>Bài 16</h1>
+
+    <h2>📖 Bài học chính</h2>
+    <iframe src="pdf/bai16.pdf"></iframe>
+
+    <div class="audio-section">
+      <h2>🔊 Nghe bài học</h2>
+      <audio controls>
+        <source src="audio/bai16.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+      </audio>
+
+      <h2>🎧 Nghe từ mới cô đọc</h2>
+      <audio controls>
+        <source src="audio/bai16_tumoi.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+      </audio>
+    </div>
+
+    <h2>📘 Từ mới mở rộng</h2>
+    <iframe src="pdf/bai16_tumoi.pdf"></iframe>
+  </div>
+</body>
+</html>
