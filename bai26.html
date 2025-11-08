@@ -179,5 +179,67 @@ Hộ chiếu của bạn, tôi tìm thấy rồi =找到 zhǎodào
 睡着了： ngủ rồi ( diễn tả kết quả )</div>
 
 </div>
+<!-- 📝 Ghi chú cá nhân khổ A4 -->
+<div style="display:flex; justify-content:center; margin-top:30px;">
+  <div style="
+        border:2px solid #c5c5c5; 
+        border-radius:10px; 
+        padding:15px; 
+        background:#fff;
+        box-sizing:border-box;
+        overflow:auto;
+        max-width:100%;
+      ">
+    <h3 style="margin-top:0; color:#333;">📝 Ghi chú của tôi</h3>
+    <textarea id="userNote"
+      style="
+        width:210mm; 
+        max-width:100%;
+        height:297mm; 
+        box-sizing:border-box; 
+        font-size:16px; 
+        padding:10px; 
+        border:1px solid #bbb; 
+        border-radius:8px; 
+        resize:vertical;
+      "
+    ></textarea>
+    <div style="margin-top:10px; text-align:right;">
+      <button id="saveNote"
+        style="
+          padding:8px 16px; 
+          background:#4CAF50; 
+          color:#fff; 
+          border:none; 
+          border-radius:6px; 
+          cursor:pointer;
+        ">
+        💾 Lưu lại
+      </button>
+      <span id="saveStatus" style="margin-left:10px; color:green; font-style:italic;"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+  // --- Ghi chú cá nhân cho bài học (riêng từng trang) ---
+  const noteArea = document.getElementById('userNote');
+  const status = document.getElementById('saveStatus');
+
+  // Key lưu ghi chú dựa vào đường dẫn trang
+  const pageKey = 'note_' + window.location.pathname;
+
+  // Load ghi chú nếu đã lưu
+  const savedNote = localStorage.getItem(pageKey);
+  if (savedNote) noteArea.value = savedNote;
+
+  // Lưu ghi chú vào localStorage
+  document.getElementById('saveNote').addEventListener('click', () => {
+    localStorage.setItem(pageKey, noteArea.value);
+    status.textContent = '✅ Đã lưu!';
+    setTimeout(() => status.textContent = '', 2000);
+  });
+</script>
+
 </body>
 </html>
